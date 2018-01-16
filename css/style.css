@@ -47,7 +47,8 @@
 body,
 html {
   font-size: 10px;
-  line-height: 2rem; }
+  line-height: 2rem;
+  width: 100%; }
 
 .wrapper {
   width: 100%; }
