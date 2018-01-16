@@ -76,6 +76,9 @@
   .container {
     width: 70%; }
 
+  .about-us__banner {
+    padding: 100px 0; }
+
   .quote-text:after {
     left: 43%;
     width: 179px; }
