@@ -53,7 +53,7 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 0; }
 
 h1 {
-  font-size: 4.3rem;
+  font-size: 3.3rem;
   font-family: "PlayfairDisplay-regular";
   font-weight: 500;
   margin-top: 0; }
@@ -62,24 +62,22 @@ h2 {
   font-size: 2.7rem; }
 
 h3 {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-family: 'Merriweather-Regular'; }
 
 h4 {
-  font-size: 1.2rem; }
+  font-size: 1.5rem; }
+
+h5 {
+  font-size: 1rem; }
 
 p {
-  font-size: 1rem;
-  letter-spacing: -0.7px; }
-
-.text-gold {
-  color: #BB804C; }
-
-.text-white {
-  color: #fff; }
+  font-size: 1.3rem;
+  letter-spacing: -0.7px;
+  line-height: 20px; }
 
 .text-grey {
-  color: #4e4f4f; }
+  color: #4D4E4E; }
 
 /*margin top*/
 .m-top-0 {
@@ -111,6 +109,9 @@ p {
 
 .m-top-50 {
   margin-top: 50px; }
+
+.m-top-60 {
+  margin-top: 60px; }
 
 .m-top-70 {
   margin-top: 70px; }
@@ -148,6 +149,9 @@ p {
 
 .m-bot-50 {
   margin-bottom: 50px; }
+
+.m-bot-60 {
+  margin-bottom: 60px; }
 
 .m-bot-80 {
   margin-bottom: 80px; }
@@ -294,6 +298,13 @@ p {
 .p-bot-100 {
   padding-bottom: 100px; }
 
+.nav {
+  color: #000;
+  font-family: 'Merriweather-Regular'; }
+
+.navbar-default .navbar-nav > li > a {
+  color: #231F1F; }
+
 .navbar-brand {
   width: 83%;
   height: auto; }
@@ -309,7 +320,7 @@ p {
 
 .navbar-toggle .icon-bar {
   height: 3px;
-  width: 27px; }
+  width: 23px; }
 
 .navbar-default .navbar-toggle {
   border-color: #fff;
@@ -333,45 +344,59 @@ p {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 14vh 0; }
+  padding: 80px 0; }
+  .about-us__banner h1 {
+    color: #BB804C; }
+  .about-us__banner h3 {
+    color: #fff;
+    margin-top: 3rem; }
 
 .container {
   width: 90%; }
 
 .body-content {
   position: relative;
-  width: 100%; }
-
-.page-content {
-  padding: 7vh 0;
+  width: 100%;
+  padding: 9vh 0;
   display: inline-block;
   width: 100%; }
 
 .index-heading {
   margin-bottom: 7vh;
-  padding: 0 7vw; }
+  padding: 0 9vw; }
   .index-heading h3 {
     color: #BB804C;
     margin-bottom: 4vh; }
   .index-heading h2 {
     font-family: "PlayfairDisplay-Regular";
     font-weight: 500;
-    font-size: 3rem; }
+    font-size: 2.3rem; }
 
 .content-text p {
-  font-size: 1.6rem;
-  font-family: "Poppins-Regular"; }
+  font-family: "Poppins-Regular";
+  line-height: 26px;
+  color: #4D4E4E;
+  letter-spacing: 0.3px; }
+.content-text .icon-box .icon {
+  width: 36%; }
+.content-text .icon-box .text-box {
+  padding: 0 7vw;
+  padding-top: 3vh; }
+.content-text .icon-box:last-child {
+  margin-bottom: 60px; }
 
 .bg-grey {
   background-color: #D6D6D4; }
 
 .quote-text {
-  letter-spacing: -0.7px; }
+  letter-spacing: 0.3px;
+  margin-bottom: 60px; }
   .quote-text h2 {
     font-family: 'PlayfairDisplay-Italic';
-    line-height: 2.3rem;
-    font-size: 3.1rem;
-    color: #333333; }
+    line-height: 2.9rem;
+    font-size: 2.3rem;
+    color: #333333;
+    font-weight: 500; }
   .quote-text span {
     color: #BB8049; }
 
@@ -380,10 +405,36 @@ p {
   position: relative;
   display: block;
   bottom: -32px;
-  left: 37%;
-  width: 117px;
+  left: 43%;
+  width: 96px;
   height: 1px;
   margin-left: -35px;
   background: #BB804C; }
+
+footer {
+  background-color: #010101;
+  color: #fff;
+  line-height: 14px; }
+  footer .content-text p {
+    font-family: 'Poppins-Regular';
+    color: #fff;
+    line-height: 14px;
+    padding: 0vh 8vw;
+    font-size: 1.2rem; }
+  footer .content-text a {
+    color: #fff; }
+  footer .footer__logo {
+    width: 89%; }
+  footer .social-icons > img {
+    width: 8%;
+    margin: 4vh 2vh; }
+  footer h4 {
+    font-family: "PlayfairDisplay-Regular";
+    margin: 2.5vh 0; }
+  footer .contact-details img {
+    max-width: 5%;
+    margin: 1.3vh 2vw; }
+  footer .contact-details .contact-detail {
+    font-size: 1.2rem; }
 
 /*# sourceMappingURL=style.css.map */
