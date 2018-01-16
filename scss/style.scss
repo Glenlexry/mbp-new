@@ -106,7 +106,7 @@ h4 {
 }
 
 h5 {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 p {
@@ -595,7 +595,7 @@ footer {
     p {
       font-family: 'Poppins-Regular';
       color: $color-white;
-      line-height: 14px;
+      line-height: 17px;
       font-size: 1.2rem;
     }
 
@@ -662,11 +662,7 @@ input[type=search] {
   border: solid 1px #ccc;
   padding: 9px 10px 9px 32px;
   width: 55px;
-  -webkit-border-radius: 10em;
-  -moz-border-radius: 10em;
   border-radius: 10em;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
   transition: all 0.5s;
 }
 
@@ -684,8 +680,8 @@ input::-webkit-input-placeholder {
 }
 
 #demo-2 input[type=search] {
-  width: 15px;
-  padding-left: 10px;
+  width: 22px;
+  padding-left: 5px;
   color: transparent;
   cursor: pointer;
   display: block;

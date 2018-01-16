@@ -171,7 +171,7 @@
       .content-text {
         text-align: left;
         p {
-          line-height: 16px;
+          line-height: 19px;
         }
       }
       .about-links {
@@ -194,7 +194,7 @@
   }
 
   .about-us__banner {
-    padding: 105px 0;
+    padding: 130px 0;
   }
 
   .quote-text:after {
@@ -214,6 +214,17 @@
     }
   }
 
+  input[type=search] {
+    background: #ededed url(../img/Asset-11.png) no-repeat 12px center;
+  }
+  #demo-2 input[type=search]:focus {
+    padding-left: 40px;
+  }
+
+  #demo-2 input[type=search] {
+    width: 28px;
+  }
+
   footer .footer__logo {
     width: 303px;
   }
@@ -223,8 +234,26 @@
     font-size: 17px;
   }
 
+  #demo-2 input[type=search] {
+    width: 39px;
+  }
+
+  input[type=search] {
+    background: #ededed url(../img/Asset-11.png) no-repeat 18px center;
+  }
+
+  #demo-2 input[type=search]:focus {
+    padding-left: 50px;
+  }
+
+  #demo-2 {
+    position: relative;
+    bottom: 10px;
+    transform: scale(1.2);
+  }
+
   .about-us__banner {
-    padding: 135px 0;
+    padding: 170px 0;
   }
 
   .content-text {
@@ -245,5 +274,17 @@
   }
   .content-text .icon-box .icon {
     width: 130px;
+  }
+
+  footer .contact-details img {
+    max-width: 24px;
+  }
+
+  footer .contact-details {
+    margin-bottom: 10px;
+
+    .contact-detail {
+      margin-bottom: 16px;
+    }
   }
 }

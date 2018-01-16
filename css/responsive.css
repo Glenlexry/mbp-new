@@ -104,7 +104,7 @@
   footer .page-content .content-text {
     text-align: left; }
     footer .page-content .content-text p {
-      line-height: 16px; }
+      line-height: 19px; }
   footer .page-content .about-links {
     text-align: right; }
 
@@ -119,7 +119,7 @@
     width: 65%; }
 
   .about-us__banner {
-    padding: 105px 0; }
+    padding: 130px 0; }
 
   .quote-text:after {
     left: 43%;
@@ -134,14 +134,38 @@
     .navbar-header img {
       width: 21%; }
 
+  input[type=search] {
+    background: #ededed url(../img/Asset-11.png) no-repeat 12px center; }
+
+  #demo-2 input[type=search]:focus {
+    padding-left: 40px; }
+
+  #demo-2 input[type=search] {
+    width: 28px; }
+
   footer .footer__logo {
     width: 303px; } }
 @media (min-width: 2560px) {
   html, body {
     font-size: 17px; }
 
+  #demo-2 input[type=search] {
+    width: 39px; }
+
+  input[type=search] {
+    background: #ededed url(../img/Asset-11.png) no-repeat 18px center; }
+
+  #demo-2 input[type=search]:focus {
+    padding-left: 50px; }
+
+  #demo-2 {
+    position: relative;
+    bottom: 10px;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2); }
+
   .about-us__banner {
-    padding: 135px 0; }
+    padding: 170px 0; }
 
   .content-text p {
     line-height: 40px; }
@@ -156,6 +180,14 @@
     width: 40px; }
 
   .content-text .icon-box .icon {
-    width: 130px; } }
+    width: 130px; }
+
+  footer .contact-details img {
+    max-width: 24px; }
+
+  footer .contact-details {
+    margin-bottom: 10px; }
+    footer .contact-details .contact-detail {
+      margin-bottom: 16px; } }
 
 /*# sourceMappingURL=responsive.css.map */
