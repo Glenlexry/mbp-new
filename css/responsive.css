@@ -44,7 +44,7 @@
       margin: auto; }
 
   .about-us__banner {
-    padding: 56px 0; }
+    padding: 84px 0; }
     .about-us__banner h3 {
       margin-top: 1.5rem; }
 
@@ -65,7 +65,7 @@
   .content-text .icon-box .icon {
     width: 100px; }
   .content-text .icon-box:last-child {
-    margin-bottom: 30px; }
+    margin-bottom: 0px; }
 
   footer .social-icons > a img {
     margin: 2vh 0;
@@ -74,7 +74,7 @@
     margin: 1.3vh 2vw; } }
 @media (min-width: 1024px) {
   .container {
-    width: 57%; }
+    width: 70%; }
 
   .quote-text:after {
     left: 39%;
@@ -84,6 +84,9 @@
     margin-bottom: 4vh; }
     .index-heading h3 {
       margin-bottom: 3vh; }
+
+  .nav > li {
+    margin: 0 3vw; }
 
   .content-text {
     padding: 0; }
@@ -113,7 +116,7 @@
     font-size: 12px; }
 
   .container {
-    width: 50%; }
+    width: 70%; }
 
   .about-us__banner {
     padding: 105px 0; }

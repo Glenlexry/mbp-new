@@ -414,6 +414,14 @@ p {
 .active {
   color: $color-gold;
 }
+
+#navbar {
+  ul {
+    li a p:hover {
+      color: $color-gold;
+    }
+  }
+}
 //bootstrap hack
 .nav {
   color: $color-black;
@@ -603,6 +611,10 @@ footer {
   .social-icons > a img {
     width: 30px;
     margin: 4vh 2vh;
+  }
+
+  .social:hover {
+    filter: invert(100%)
   }
 
   h4 {

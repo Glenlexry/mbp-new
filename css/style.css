@@ -311,6 +311,9 @@ p {
 .active {
   color: #BB804C; }
 
+#navbar ul li a p:hover {
+  color: #BB804C; }
+
 .nav {
   color: #000;
   font-family: 'Merriweather-Regular'; }
@@ -446,6 +449,9 @@ footer {
   footer .social-icons > a img {
     width: 30px;
     margin: 4vh 2vh; }
+  footer .social:hover {
+    -webkit-filter: invert(100%);
+            filter: invert(100%); }
   footer h4 {
     font-family: "PlayfairDisplay-Regular";
     margin: 2.5vh 0; }
