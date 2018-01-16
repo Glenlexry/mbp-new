@@ -49,6 +49,9 @@ html {
   font-size: 10px;
   line-height: 2rem; }
 
+.wrapper {
+  width: 100%; }
+
 h1,
 h2,
 h3,
@@ -305,6 +308,9 @@ p {
 .p-bot-100 {
   padding-bottom: 100px; }
 
+.active {
+  color: #BB804C; }
+
 .nav {
   color: #000;
   font-family: 'Merriweather-Regular'; }
@@ -385,10 +391,12 @@ p {
   line-height: 26px;
   color: #4D4E4E;
   letter-spacing: 0.3px; }
-.content-text .icon-box .icon {
-  width: 36%; }
-.content-text .icon-box .text-box {
-  padding: 3vh 7vw 0; }
+.content-text .icon-box {
+  margin-top: 60px; }
+  .content-text .icon-box .icon {
+    width: 100px; }
+  .content-text .icon-box .text-box {
+    padding: 3vh 7vw 0; }
 .content-text .icon-box:last-child {
   margin-bottom: 60px; }
 
@@ -430,23 +438,26 @@ footer {
     font-family: 'Poppins-Regular';
     color: #fff;
     line-height: 14px;
-    padding: 0 8vw;
     font-size: 1.2rem; }
   footer .content-text a {
     color: #fff; }
   footer .footer__logo {
-    width: 89%; }
-  footer .social-icons > img {
-    width: 8%;
+    width: 260px; }
+  footer .social-icons > a img {
+    width: 30px;
     margin: 4vh 2vh; }
   footer h4 {
     font-family: "PlayfairDisplay-Regular";
     margin: 2.5vh 0; }
   footer .contact-details img {
-    max-width: 5%;
+    max-width: 17px;
     margin: 1.3vh 2vw; }
   footer .contact-details .contact-detail {
     font-size: 1.2rem; }
+
+.footer-content {
+  padding: 50px 0;
+  padding-bottom: 20px; }
 
 input {
   outline: none;
@@ -467,11 +478,8 @@ input[type=search] {
   border: solid 1px #ccc;
   padding: 9px 10px 9px 32px;
   width: 55px;
-  -webkit-border-radius: 10em;
-  -moz-border-radius: 10em;
   border-radius: 10em;
   -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
   transition: all 0.5s; }
 
 input[type=search]:focus {
