@@ -150,6 +150,9 @@
     line-height: 25px; }
 
   footer .social-icons > a img {
-    width: 40px; } }
+    width: 40px; }
+
+  .content-text .icon-box .icon {
+    width: 130px; } }
 
 /*# sourceMappingURL=responsive.css.map */
