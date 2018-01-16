@@ -448,6 +448,10 @@ p {
   margin-bottom: 0;
 }
 
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border-color: $color-white;
+}
+
 .navbar-default .navbar-toggle:focus,
 .navbar-default .navbar-toggle:hover {
   background-color: $color-background-white;
