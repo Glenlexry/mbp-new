@@ -486,12 +486,23 @@ p {
 }
 //banner
 
-.about-us__banner {
-  background-image: url("../img/MBP_About-us-03.jpg");
+.about-us {
+  background-image: url("../img/about-us/MBP_About-us-03.jpg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 80px 0;
+}
+
+.careers {
+  background-image: url("../img/Careers/MBP_Career-06.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 80px 0;
+}
+
+.banner {
 
   h1 {
     color: $color-gold;
@@ -502,6 +513,21 @@ p {
     margin-top: 3rem;
   }
 }
+//bg-images
+.content-text {
+
+}
+.bg-image__careers {
+  background-image: url("../img/Careers/weighing-scale.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  p {
+    color: $color-white;
+  }
+}
+
 //
 
 .container {
@@ -666,7 +692,7 @@ input::-webkit-search-decoration {
 }
 
 input[type=search] {
-  background: #ededed url("../img/Asset-11.png") no-repeat 9px center;
+  background: #ededed url("../img/misc/Asset-11.png") no-repeat 9px center;
   border: solid 1px #ccc;
   padding: 9px 10px 9px 32px;
   width: 55px;

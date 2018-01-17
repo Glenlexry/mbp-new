@@ -138,7 +138,7 @@
       width: 21%; }
 
   input[type=search] {
-    background: #ededed url(../img/Asset-11.png) no-repeat 12px center; }
+    background: #ededed url(../img/misc/Asset-11.png) no-repeat 12px center; }
 
   #demo-2 input[type=search]:focus {
     padding-left: 40px; }
