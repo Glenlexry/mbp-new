@@ -1,3 +1,19 @@
+//mixins
+@mixin dark-overlay{
+	&:after{
+		content: "";
+		width: 100%;
+		height: auto;
+		position: absolute;
+		z-index: -1;
+     top: 0;
+		right: 0;
+		left: 0;
+		bottom: 0;
+	}
+}
+//
+
 @font-face {
   font-family: 'Merriweather-Regular';
   src: url("../Fonts/Merriweather-Regular.eot");
@@ -110,6 +126,11 @@ h4 {
 }
 
 h5 {
+  font-size: 2rem;
+  font-family: "PlayfairDisplay-Regular";
+}
+
+h6 {
   font-size: 1.2rem;
 }
 
@@ -488,7 +509,7 @@ p {
 
 .about-us {
   background-image: url("../img/about-us/MBP_About-us-03.jpg");
-  background-position: 50% 50%;
+  background-position: 62% 50%;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 80px 0;
@@ -496,7 +517,7 @@ p {
 
 .careers {
   background-image: url("../img/Careers/MBP_Career-06.jpg");
-  background-position: 50% 50%;
+  background-position: 61% 50%;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 80px 0;
@@ -514,24 +535,48 @@ p {
   }
 }
 //bg-images
-.content-text {
 
-}
 .bg-image__careers {
+  position: relative;
+  z-index: 1;
   background-image: url("../img/Careers/weighing-scale.jpg");
-  background-position: 50% 50%;
+  background-position: 34% 17%;
   background-repeat: no-repeat;
-  background-size: cover;
+	background-attachment: fixed;
+  @include dark-overlay;
 
-  p {
-    color: $color-white;
+  .text-block {
+    padding-top: 20px;
+    margin-bottom: 50px;
+    h2 {
+      color: $color-gold;
+    }
+
+    .content-text {
+      p {
+        color: $color-white;
+      }
+    }
   }
+}
+.bg-image__careers:after{
+  background:rgba(0, 0, 0, 0.55);
 }
 
 //
 
 .container {
   width: 90%;
+}
+
+#custom-container {
+  width: 90%;
+  margin: auto;
+}
+
+#custom-container-1 {
+  width: 90%;
+  margin: auto;
 }
 
 .body-content {
@@ -544,7 +589,6 @@ p {
 
 .index-heading {
   margin-bottom: 7vh;
-  padding: 0 9vw;
 
   h3 {
     color: $color-gold;
@@ -556,6 +600,19 @@ p {
     font-weight: 500;
     font-size: 2.3rem;
   }
+}
+
+.index-sub-heading {
+  margin-bottom: 7vh;
+
+  h2 {
+    font-family: "PlayfairDisplay-Regular";
+  }
+}
+
+.text-block {
+  padding-top: 20px;
+  margin-bottom: 50px;
 }
 
 .content-text {
@@ -584,6 +641,12 @@ p {
 
 .bg-grey {
   background-color: $color-grey-background;
+}
+
+.text-block {
+  .content-text {
+    padding: 0 17px;
+  }
 }
 
 .quote-heading {

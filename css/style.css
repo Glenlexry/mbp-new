@@ -83,6 +83,10 @@ h4 {
   font-size: 1.5rem; }
 
 h5 {
+  font-size: 2rem;
+  font-family: "PlayfairDisplay-Regular"; }
+
+h6 {
   font-size: 1.2rem; }
 
 p {
@@ -365,14 +369,14 @@ p {
 
 .about-us {
   background-image: url("../img/about-us/MBP_About-us-03.jpg");
-  background-position: 50% 50%;
+  background-position: 62% 50%;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 80px 0; }
 
 .careers {
   background-image: url("../img/Careers/MBP_Career-06.jpg");
-  background-position: 50% 50%;
+  background-position: 61% 50%;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 80px 0; }
@@ -384,15 +388,43 @@ p {
   margin-top: 3rem; }
 
 .bg-image__careers {
+  position: relative;
+  z-index: 1;
   background-image: url("../img/Careers/weighing-scale.jpg");
-  background-position: 50% 50%;
+  background-position: 34% 17%;
   background-repeat: no-repeat;
-  background-size: cover; }
-  .bg-image__careers p {
-    color: #fff; }
+  background-attachment: fixed; }
+  .bg-image__careers:after {
+    content: "";
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0; }
+  .bg-image__careers .text-block {
+    padding-top: 20px;
+    margin-bottom: 50px; }
+    .bg-image__careers .text-block h2 {
+      color: #BB804C; }
+    .bg-image__careers .text-block .content-text p {
+      color: #fff; }
+
+.bg-image__careers:after {
+  background: rgba(0, 0, 0, 0.55); }
 
 .container {
   width: 90%; }
+
+#custom-container {
+  width: 90%;
+  margin: auto; }
+
+#custom-container-1 {
+  width: 90%;
+  margin: auto; }
 
 .body-content {
   position: relative;
@@ -402,8 +434,7 @@ p {
   width: 100%; }
 
 .index-heading {
-  margin-bottom: 7vh;
-  padding: 0 9vw; }
+  margin-bottom: 7vh; }
   .index-heading h3 {
     color: #BB804C;
     margin-bottom: 4vh; }
@@ -411,6 +442,15 @@ p {
     font-family: "PlayfairDisplay-Regular";
     font-weight: 500;
     font-size: 2.3rem; }
+
+.index-sub-heading {
+  margin-bottom: 7vh; }
+  .index-sub-heading h2 {
+    font-family: "PlayfairDisplay-Regular"; }
+
+.text-block {
+  padding-top: 20px;
+  margin-bottom: 50px; }
 
 .content-text p {
   font-family: "Poppins-Regular";
@@ -428,6 +468,9 @@ p {
 
 .bg-grey {
   background-color: #D6D6D4; }
+
+.text-block .content-text {
+  padding: 0 17px; }
 
 .quote-heading {
   margin-bottom: 40px;

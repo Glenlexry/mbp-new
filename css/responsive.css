@@ -1,8 +1,17 @@
 @media (min-width: 480px) {
   .content-text .text-box {
-    padding: 3vh 160px; } }
+    padding: 3vh 160px; }
+
+  .text-block .content-text {
+    padding: 0 55px; } }
 @media (min-width: 768px) {
   .container {
+    width: 68%; }
+
+  #custom-container {
+    width: 68%; }
+
+  #custom-container-1 {
     width: 68%; }
 
   .body-content {
@@ -43,9 +52,9 @@
       width: 31%;
       margin: auto; }
 
-  .about-us__banner {
+  .banner {
     padding: 84px 0; }
-    .about-us__banner h3 {
+    .banner h3 {
       margin-top: 1.5rem; }
 
   .index-heading {
@@ -72,11 +81,14 @@
     margin-right: 4px; }
   footer .contact-details img {
     margin: 1.3vh 2vw; } }
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   .container {
     width: 70%; }
 
-  .about-us__banner {
+  #custom-container {
+    width: 100%; }
+
+  .banner {
     padding: 100px 0; }
 
   .quote-text:after {
@@ -91,11 +103,18 @@
   .nav > li {
     margin: 0 3vw; }
 
+  .text-block .content-text {
+    padding: 0 30px; }
+
   .content-text {
     padding: 0; }
     .content-text .icon-box .text-box {
       padding: 0 50px;
       padding-top: 30px; }
+
+  .bg-image__careers {
+    background-position: 34% 17%;
+    background-size: cover; }
 
   footer p {
     padding: 0; }
@@ -121,7 +140,10 @@
   .container {
     width: 65%; }
 
-  .about-us__banner {
+  #custom-container-1 {
+    width: 87%; }
+
+  .banner {
     padding: 130px 0; }
 
   .quote-text:after {
@@ -136,6 +158,9 @@
     margin: 20px 0; }
     .navbar-header img {
       width: 21%; }
+
+  .text-block .content-text {
+    padding: 0 111px; }
 
   input[type=search] {
     background: #ededed url(../img/misc/Asset-11.png) no-repeat 12px center; }
@@ -152,11 +177,14 @@
   html, body {
     font-size: 17px; }
 
+  .text-block .content-text {
+    padding: 0 218px; }
+
   #demo-2 input[type=search] {
     width: 39px; }
 
   input[type=search] {
-    background: #ededed url(../img/Asset-11.png) no-repeat 18px center; }
+    background: #ededed url(../img/misc/Asset-11.png) no-repeat 18px center; }
 
   #demo-2 input[type=search]:focus {
     padding-left: 50px; }
@@ -167,7 +195,7 @@
     -webkit-transform: scale(1.2);
             transform: scale(1.2); }
 
-  .about-us__banner {
+  .banner {
     padding: 170px 0; }
 
   .content-text p {

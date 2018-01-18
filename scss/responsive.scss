@@ -4,9 +4,23 @@
       padding: 3vh 160px;
     }
   }
+
+  .text-block {
+    .content-text {
+      padding: 0 55px;
+    }
+  }
 }
 @media (min-width: 768px) {
   .container {
+    width: 68%;
+  }
+
+  #custom-container {
+    width: 68%;
+  }
+
+  #custom-container-1 {
     width: 68%;
   }
 
@@ -65,7 +79,7 @@
     }
   }
 
-  .about-us__banner {
+  .banner {
     padding: 84px 0;
 
     h3 {
@@ -122,11 +136,14 @@
     }
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   .container {
     width: 70%;
   }
-  .about-us__banner {
+  #custom-container {
+    width: 100%;
+  }
+  .banner {
     padding: 100px 0;
   }
 
@@ -147,6 +164,12 @@
     margin: 0 3vw;
   }
 
+  .text-block {
+    .content-text {
+      padding: 0 30px;
+    }
+  }
+
   .content-text {
     padding: 0;
     .icon-box {
@@ -155,6 +178,11 @@
         padding-top: 30px;
       }
     }
+  }
+
+  .bg-image__careers {
+    background-position: 34% 17%;
+    background-size: cover;
   }
 
   footer {
@@ -196,7 +224,11 @@
     width: 65%;
   }
 
-  .about-us__banner {
+  #custom-container-1 {
+    width: 87%;
+  }
+
+  .banner {
     padding: 130px 0;
   }
 
@@ -217,6 +249,12 @@
     }
   }
 
+  .text-block {
+    .content-text {
+      padding: 0 111px;
+    }
+  }
+
   input[type=search] {
     background: #ededed url(../img/misc/Asset-11.png) no-repeat 12px center;
   }
@@ -232,9 +270,18 @@
     width: 303px;
   }
 }
+
+
+
 @media (min-width: 2560px) {
   html,body {
     font-size: 17px;
+  }
+
+  .text-block {
+    .content-text {
+      padding: 0 218px;
+    }
   }
 
   #demo-2 input[type=search] {
@@ -242,7 +289,7 @@
   }
 
   input[type=search] {
-    background: #ededed url(../img/Asset-11.png) no-repeat 18px center;
+    background: #ededed url(../img/misc/Asset-11.png) no-repeat 18px center;
   }
 
   #demo-2 input[type=search]:focus {
@@ -255,7 +302,7 @@
     transform: scale(1.2);
   }
 
-  .about-us__banner {
+  .banner {
     padding: 170px 0;
   }
 
