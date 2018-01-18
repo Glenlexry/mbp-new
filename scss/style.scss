@@ -495,6 +495,54 @@ p {
 .navbar-default {
   border-color: $color-white;
 }
+
+.form-control {
+	border-radius: 0px;
+	border: none;
+	box-shadow: none;
+	border-bottom: solid 1px;
+}
+
+.form-group {
+  margin-bottom: 35px;
+}
+
+.form-control {
+	text-align: center;
+	font-size: 1.4rem;
+}
+
+.form-control:focus {
+	text-align: center;
+	border: none;
+	box-shadow: none;
+	border-bottom: solid 1px;
+}
+
+textarea.form-control {
+  height: 34px;
+}
+
+.btn-mbp {
+	padding: 8px 42px;
+	color: $color-white;
+	background-color: $color-gold;
+	border-radius: 0;
+	transition: all 0.15s;
+	font-size: 1.4rem;
+
+	&:hover {
+		position: relative;
+		bottom: 2px;
+		color: $color-white;
+		box-shadow: 0px 2px 7px -2px rgba(0,0,0,0.75);
+	}
+
+	&:active {
+		bottom: -1px;
+		transition: all 0.15s;
+	}
+}
 //
 
 .logo {
@@ -518,6 +566,14 @@ p {
 .careers {
   background-image: url("../img/careers/MBP_Career-06.jpg");
   background-position: 61% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 80px 0;
+}
+
+.contact-us {
+	background-image: url("../img/contact-us/MBP_Contact us-06.jpg");
+  background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 80px 0;
@@ -579,6 +635,11 @@ p {
   margin: auto;
 }
 
+#custom-form-container {
+	width: 85%;
+  margin: auto;
+}
+
 .body-content {
   position: relative;
   width: 100%;
@@ -616,6 +677,7 @@ p {
 }
 
 .content-text {
+	margin-bottom: 30px;
   p {
     font-family: "Poppins-Regular";
     line-height: 26px;
@@ -637,11 +699,49 @@ p {
   .icon-box:last-child {
     margin-bottom: 60px;
   }
+
+	.icon-box__contact-us {
+		h3 {
+			color: $color-main-p;
+		}
+
+		.icon {
+      width: 40px;
+    }
+	}
 }
 
 .bg-grey {
   background-color: $color-grey-background;
 }
+
+//contact-us
+.contact-details {
+	img {
+		max-width: 16px;
+		margin: 7px 11px;
+	}
+
+	.contact-detail {
+		font-size: 1.3rem;
+
+		a {
+			color: $color-main-p;
+		}
+	}
+}
+
+.img-box {
+	height: 40px;
+}
+
+#contact-form {
+	p {
+		color: $color-black;
+	}
+}
+
+//
 
 .text-block {
   .content-text {
@@ -734,6 +834,7 @@ footer {
 .footer-content {
   padding: 50px 0;
   padding-bottom: 20px;
+  margin-top: -8px;
 }
 //Searchbar
 
@@ -803,4 +904,10 @@ input::-webkit-input-placeholder {
 
 #demo-2 input::-webkit-input-placeholder {
   color: transparent;
+}
+
+//map
+iframe {
+	height: 400px;
+  width: 100%;
 }

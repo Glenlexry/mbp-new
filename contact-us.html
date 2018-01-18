@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-  <title>Careers | Messrs. Murali B. Pillai And Associates</title>
+  <title>Contact Us | Messrs. Murali B. Pillai And Associates</title>
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <link href="css/responsive.css" rel="stylesheet">
@@ -44,7 +44,7 @@
               </li>
               <li>
                 <a href="Careers.html">
-                  <p class="active">Careers</p>
+                  <p>Careers</p>
                 </a>
               </li>
               <li>
@@ -54,7 +54,7 @@
               </li>
               <li>
                 <a href="contact-us.html">
-                  <p>Contact Us</p>
+                  <p class="active">Contact Us</p>
                 </a>
               </li>
               <li class="search-icon">
@@ -68,17 +68,17 @@
       </nav>
     </header>
 
-    <div class="careers banner text-center">
-      <h1>Careers</h1>
-      <h3>Home / Careers</h3>
+    <div class="contact-us banner text-center">
+      <h1>Contact Us</h1>
+      <h3>Home / Contact Us</h3>
     </div>
 
     <section class="body-content">
       <div class="page-content">
         <div class="container text-center m-bot-20">
           <div class="index-heading">
-            <h3>WORK WITH US</h3>
-            <h2>Lorem ipsum dolor sit amet.</h2>
+            <h3>GET IN TOUCH</h3>
+            <h2>We Are Based in Kuala Lumpur</h2>
           </div>
           <div class="content-text">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis blandit molestie ipsum eget placerat. Maecenas eget imperdiet quam, eget luctus sapien. Cras in nibh a erat consequat euismod a a urna. In tincidunt neque lacus. Vivamus elementum
@@ -88,24 +88,53 @@
       </div>
     </section>
 
-    <section class="body-content bg-image__careers">
+    <section class="body-content bg-grey">
       <div class="page-content">
-        <div id="custom-container-1" class="text-center">
-          <div class="row">
-            <div class="text-block col-md-5">
-              <div class="index-sub-heading">
-                <h2>Training & Development</h2>
+        <div class="container text-center">
+          <div class="content-text col-md-4 col-xs-12">
+            <div class="icon-box__contact-us">
+              <div class="img-box">
+                <img class="icon" src="img/contact-us/Asset-3.svg" alt="location icon">
+              </div>
+              <div class="m-top-50 m-bot-20">
+                <h3>ADDRESS</h3>
               </div>
               <div class="content-text">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis blandit molestie ipsum eget placerat. Maecenas eget imperdiet quam, eget luctus </p>
+                <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit,<br> Kuala lumpur, Malaysia</p>
               </div>
             </div>
-            <div class="text-block col-md-5 col-md-push-2">
-              <div class="index-sub-heading">
-                <h2>Teamwork & Leadership</h2>
+          </div>
+          <div class="content-text col-md-4 col-xs-12">
+            <div class="icon-box__contact-us">
+              <div class="img-box">
+                <img class="icon" src="img/contact-us/Asset-5.svg" alt="location icon">
+              </div>
+              <div class="m-top-50 m-bot-20">
+                <h3>CONTACT</h3>
               </div>
               <div class="content-text">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis blandit molestie ipsum eget placerat. Maecenas eget imperdiet quam, eget luctus </p>
+                <div class="contact-details">
+                  <div class="contact-detail">
+                    <a href="#"><img src="img/misc/Asset-7.svg" alt="telephone icon">012-399 282</a>
+                  </div>
+                  <div class="contact-detail"><a href="#"><img src="img/misc/Asset-8.svg" alt="fax icon">06-399 2823</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content-text col-md-4 col-xs-12">
+            <div class="icon-box__contact-us">
+              <div class="img-box">
+                <img style="position: relative; top: 11px;" class="icon" src="img/contact-us/Asset-4.svg" alt="location icon">
+              </div>
+              <div class="m-top-50 m-bot-20">
+                <h3>EMAIL</h3>
+              </div>
+              <div class="content-text">
+                <a>
+                  <p>hello@mbplawservis.com</p>
+                </a>
               </div>
             </div>
           </div>
@@ -115,45 +144,58 @@
 
     <section class="body-content">
       <div class="page-content">
-        <div id="custom-container" class="text-center">
+        <div id="custom-form-container" class="text-center">
           <div class="index-heading">
-            <h3>JOIN THE FIRM</h3>
-            <h2>Current Positions</h2>
+            <h3>GOT QUESTIONS</h3>
+            <h2>Feel Free To Message</h2>
           </div>
-          <div class="m-top-80">
-            <div class="text-block col-md-4 col-xs-12">
-              <div class="index-heading">
-                <h5>Legal Executive</h5>
+          <div class="content-text">
+            <form id="contact-form" method="post" action="contact.php" role="form">
+              <div class="messages"></div>
+              <div class="controls m-top-60">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <p>Your Name (Required)</p>
+                    <input id="form_name" type="text" name="name" class="form-control" required="required" data-error="Name is required.">
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group"><p>Your Email (Required)</p>
+                    <input id="form_email" type="text" name="email" class="form-control" required="required" data-error="Email is required.">
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group"><p>Subject</p>
+                    <input id="form_subject" type="email" name="subaject" class="form-control" required="required" data-error="Subject is required.">
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group"><p>Your Message</p>
+                    <textarea id="form_message" type="Message" name="Message" class="form-control" required="required" data-error="Message is required." style="overflow:hidden;"></textarea>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <div class="g-recaptcha" data-sitekey="6LfKURIUAAAAAO50vlwWZkyK_G2ywqE52NU7YO0S"></div>
+                  </div>
+                </div>
+
+                <div class="col-md-12">
+                  <h3><input type="submit" class="btn btn-send btn-mbp" value="SEND"></h3>
+                </div>
               </div>
-              <div class="content-text">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis blandit molestie ipsum eget placerat. Maecenas eget imperdiet quam, eget luctus</p>
-              </div>
-            </div>
-            <div class="text-block col-md-4 col-xs-12">
-              <div class="index-heading">
-                <h5>Senior Associate</h5>
-              </div>
-              <div class="content-text">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis blandit molestie ipsum eget placerat. Maecenas eget imperdiet quam, eget luctus</p>
-              </div>
-            </div>
-            <div class="text-block col-md-4 col-xs-12">
-              <div class="index-heading">
-                <h5>Partner</h5>
-              </div>
-              <div class="content-text">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis blandit molestie ipsum eget placerat. Maecenas eget imperdiet quam, eget luctus</p>
-              </div>
-            </div>
-            <div class="text-block col-md-12 col-xs-12">
-              <div class="content-text m-top-30">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elaa email resume and send to <span style="font-weight: 600;"><a style="color: #000" href="#">hello@mbplawservices.com</a><span>
-                </p>
-              </div>
-            </div>
+            </form>
           </div>
         </div>
       </div>
+    </section>
+
+    <section class="body-content p-bot-0">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.927098460168!2d101.57823031534977!3d3.113989997732479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4e8e2cc96fe5%3A0x96906f6b2a828432!2sDigital+Symphony!5e0!3m2!1sen!2smy!4v1516310596521" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
     </section>
 
     <footer class="footer-content">
@@ -176,9 +218,9 @@
               <h4 class="m-bot-20">CONTACT</h4>
               <div class="contact-details">
                 <div class="contact-detail">
-                  <a href="#"><img src="img/misc/Asset-7.svg" alt="telephone icon">012-399 282</a>
+                  <a style="color: #fff" href="#"><img src="img/misc/Asset-7.svg" alt="telephone icon">012-399 282</a>
                 </div>
-                <div class="contact-detail"><a href="#"><img src="img/misc/Asset-8.svg" alt="fax icon">06-399 2823</a>
+                <div class="contact-detail"><a style="color: #fff" href="#"><img src="img/misc/Asset-8.svg" alt="fax icon">06-399 2823</a>
                 </div>
               </div>
             </div>
@@ -194,6 +236,7 @@
         </div>
       </div>
     </footer>
+
   </div>
 
   <script src="js/jquery-3.2.1.min.js"></script>
