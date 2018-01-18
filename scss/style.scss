@@ -618,6 +618,23 @@ textarea.form-control {
 .bg-image__careers:after{
   background:rgba(0, 0, 0, 0.55);
 }
+.bg-image__newsletter {
+	position: relative;
+  z-index: 1;
+  background-image: url("../img/newsletter/MBP Newsletter.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+	padding: 100px 20px;
+
+	h1 {
+		color: $color-gold;
+		margin-bottom: 30px;
+	}
+	h3 {
+		color: $color-white;
+		margin-bottom: 60px;
+	}
+}
 
 //
 
