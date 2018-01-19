@@ -403,6 +403,9 @@ textarea.form-control {
     -webkit-transition: all 0.15s;
     transition: all 0.15s; }
 
+.btn-lg {
+  padding: 13px; }
+
 .logo {
   width: 105%;
   height: auto; }
@@ -471,13 +474,31 @@ textarea.form-control {
   background-image: url("../img/newsletter/MBP Newsletter.jpg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  padding: 100px 20px; }
+  background-size: cover;
+  padding: 29vh 20px; }
+  .bg-image__newsletter form input {
+    margin-bottom: 20px;
+    height: 47px;
+    width: 100%; }
+  .bg-image__newsletter form .email {
+    font-size: 1.4rem;
+    color: #4D4E4E;
+    text-align: center; }
+  .bg-image__newsletter form .email::-webkit-input-placeholder {
+    color: #666767; }
+  .bg-image__newsletter form .email:-ms-input-placeholder {
+    color: #666767; }
+  .bg-image__newsletter form .email::-ms-input-placeholder {
+    color: #666767; }
+  .bg-image__newsletter form .email::placeholder {
+    color: #666767; }
   .bg-image__newsletter h1 {
     color: #BB804C;
     margin-bottom: 30px; }
   .bg-image__newsletter h3 {
     color: #fff;
-    margin-bottom: 60px; }
+    margin-bottom: 34px;
+    line-height: 20px; }
 
 .container {
   width: 90%; }

@@ -78,6 +78,7 @@ $color-main-p: #4D4E4E;
 $color-gold-italic: #BB8049;
 $color-black-footer: #010101;
 $color-nav-text: #231F1F;
+$color-placeholder: #666767;
 
 body,
 html {
@@ -543,6 +544,10 @@ textarea.form-control {
 		transition: all 0.15s;
 	}
 }
+
+.btn-lg {
+	padding: 13px;
+}
 //
 
 .logo {
@@ -624,7 +629,24 @@ textarea.form-control {
   background-image: url("../img/newsletter/MBP Newsletter.jpg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
-	padding: 100px 20px;
+	background-size: cover;
+	padding: 29vh 20px;
+
+	form {
+		input {
+			margin-bottom: 20px;
+			height: 47px;
+			width: 100%;
+		}
+		.email {
+			font-size: 1.4rem;
+			color: $color-main-p;
+			text-align: center;
+		}
+		.email::placeholder {
+			color: $color-placeholder;
+		}
+	}
 
 	h1 {
 		color: $color-gold;
@@ -632,7 +654,8 @@ textarea.form-control {
 	}
 	h3 {
 		color: $color-white;
-		margin-bottom: 60px;
+		margin-bottom: 34px;
+		line-height: 20px;
 	}
 }
 
