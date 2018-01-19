@@ -584,6 +584,14 @@ textarea.form-control {
   padding: 80px 0;
 }
 
+.our-team {
+	background-image: url("../img/our-team/team4.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 80px 0;
+}
+
 .banner {
 
   h1 {
@@ -756,17 +764,19 @@ textarea.form-control {
 }
 
 //contact-us
-.contact-details {
-	img {
-		max-width: 16px;
-		margin: 7px 11px;
-	}
+.icon-box__contact-us{
+	.contact-details {
+		img {
+			max-width: 16px;
+			margin: 7px 11px;
+		}
 
-	.contact-detail {
-		font-size: 1.3rem;
+		.contact-detail {
+			font-size: 1.3rem;
 
-		a {
-			color: $color-main-p;
+			a {
+				color: $color-main-p;
+			}
 		}
 	}
 }

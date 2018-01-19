@@ -434,6 +434,13 @@ textarea.form-control {
   background-size: cover;
   padding: 80px 0; }
 
+.our-team {
+  background-image: url("../img/our-team/team4.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 80px 0; }
+
 .banner h1 {
   color: #BB804C; }
 .banner h3 {
@@ -564,12 +571,12 @@ textarea.form-control {
 .bg-grey {
   background-color: #D6D6D4; }
 
-.contact-details img {
+.icon-box__contact-us .contact-details img {
   max-width: 16px;
   margin: 7px 11px; }
-.contact-details .contact-detail {
+.icon-box__contact-us .contact-details .contact-detail {
   font-size: 1.3rem; }
-  .contact-details .contact-detail a {
+  .icon-box__contact-us .contact-details .contact-detail a {
     color: #4D4E4E; }
 
 .img-box {
