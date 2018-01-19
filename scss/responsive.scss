@@ -27,7 +27,7 @@
   #custom-form-container {
     width: 68%;
     margin: auto;
-}
+  }
 
   .body-content {
     padding: 8vh 0;
@@ -137,6 +137,19 @@
     margin-top: 10px;
   }
 
+  //our-team
+  .fixed-box {
+    width: 617px;
+    margin: auto;
+  }
+
+  .lawyer-box {
+    width: 306px;
+  }
+
+  .dark-overlay::after {
+    width: 94.5%;
+  }
   //
   footer {
     .social-icons > a img {
@@ -238,8 +251,13 @@
     text-align: left
   }
 
-  //
+  // our team
+  .fixed-box {
+    width: 924px;
+    margin: auto;
+  }
 
+  //
   footer {
     p {
       padding: 0;
@@ -356,6 +374,19 @@
     font-size: 1.6rem;
   }
 
+  //our-team
+  .fixed-box {
+    width: 1300px;
+    margin: auto;
+  }
+
+  .lawyer-box {
+    width: 433px;
+  }
+
+  .lawyer-img {
+    width: 410px;
+  }
   //
 
   footer .footer__logo {

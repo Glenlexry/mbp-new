@@ -86,6 +86,16 @@
   .form-control {
     margin-top: 10px; }
 
+  .fixed-box {
+    width: 617px;
+    margin: auto; }
+
+  .lawyer-box {
+    width: 306px; }
+
+  .dark-overlay::after {
+    width: 94.5%; }
+
   footer .social-icons > a img {
     margin: 2vh 0;
     margin-right: 4px; }
@@ -162,6 +172,10 @@
 
   .email::placeholder {
     text-align: left; }
+
+  .fixed-box {
+    width: 924px;
+    margin: auto; }
 
   footer p {
     padding: 0; }
@@ -251,6 +265,16 @@
 
   .email::placeholder {
     font-size: 1.6rem; }
+
+  .fixed-box {
+    width: 1300px;
+    margin: auto; }
+
+  .lawyer-box {
+    width: 433px; }
+
+  .lawyer-img {
+    width: 410px; }
 
   footer .footer__logo {
     width: 303px; } }
