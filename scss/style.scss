@@ -804,17 +804,36 @@ textarea.form-control {
 	margin-right: 10px;
 	width: 319px;
 	margin: auto auto 20px;
+
+	.caption {
+		position: absolute;
+		top: 40%;
+		width: 288px;
+		display: none;
+		z-index: 100;
+		h3 {
+			color: $color-white;
+			font-size: 2rem;
+			margin-bottom: 20px;
+		}
+		h4 {
+			color: $color-white;
+			font-size: 2rem;
+			font-family: 'PlayfairDisplay-Italic';
+		}
+	}
+}
+
+.lawyer-box:hover {
+	.caption {
+		display: block;
+	}
 }
 
 .lawyer-img {
 	width: 288px;
 	position: relative;
 	z-index: -1;
-}
-
-.lawyer-img::after {
-	content: 'Here is some text..';
-  color: #fff;
 }
 
 .dark-overlay::after {
@@ -830,7 +849,11 @@ textarea.form-control {
 }
 
 .dark-overlay:hover:after {
-    opacity: 1;
+  opacity: 1;
+
+	.caption {
+		display: block;
+	}
 }
 //
 .text-block {

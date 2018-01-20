@@ -276,6 +276,10 @@
   .lawyer-img {
     width: 410px; }
 
+  .lawyer-box .caption {
+    width: 410px;
+    top: 45%; }
+
   footer .footer__logo {
     width: 303px; } }
 @media (min-width: 2560px) {
