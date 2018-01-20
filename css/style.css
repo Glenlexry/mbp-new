@@ -588,6 +588,9 @@ textarea.form-control {
 
 .mini-nav a {
   color: #4D4E4E; }
+  .mini-nav a:hover {
+    color: #BB804C;
+    text-decoration: none; }
 
 .lawyer-box {
   margin-left: 10px;

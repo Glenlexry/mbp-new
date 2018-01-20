@@ -796,6 +796,11 @@ textarea.form-control {
 .mini-nav {
 	a {
 		color: $color-main-p;
+
+		&:hover {
+			color: $color-gold;
+			text-decoration: none;
+		}
 	}
 }
 
