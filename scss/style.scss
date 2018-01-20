@@ -671,6 +671,8 @@ textarea.form-control {
 //
 .container {
 	width: 90%;
+	padding-left: 0;
+	padding-right: 0;
 }
 
 #custom-container {
@@ -860,6 +862,40 @@ textarea.form-control {
 		display: block;
 	}
 }
+// Murali
+.our-team {
+	h3 {
+		padding: 0 50px;
+		line-height: 20px;
+	}
+}
+.caption-murali {
+	padding: 20px;
+	h2 {
+		font-family: 'PlayfairDisplay-Regular';
+		font-size: 2.4rem;
+		margin-bottom: 10px;
+	}
+	h6 {
+		font-family: 'Merriweather-Regular';
+		font-size: 1.2rem;
+		color:  $color-placeholder;
+	}
+}
+.icon {
+	width: 20px;
+	height: 20px;
+	margin: 0 10px;
+}
+.murali-social {
+	&::after {
+		content: "";
+		width: 20px;
+		height: 1px;
+	}
+}
+
+
 //
 .text-block {
 	.content-text {
