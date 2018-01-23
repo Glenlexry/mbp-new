@@ -78,6 +78,7 @@ $color-gold-italic: #BB8049;
 $color-black-footer: #010101;
 $color-nav-text: #231F1F;
 $color-placeholder: #666767;
+$color-underline: #BCBBBB;
 
 body,
 html {
@@ -430,6 +431,15 @@ p {
 .p-bot-100 {
 	padding-bottom: 100px;
 }
+
+.p-l-0 {
+	padding-left: 0px;
+}
+
+.align-bot {
+	position: relative;
+	bottom: 0;
+}
 //
 
 .active {
@@ -669,6 +679,7 @@ textarea.form-control {
 	}
 }
 //
+
 .container {
 	width: 90%;
 	padding-left: 0;
@@ -795,6 +806,7 @@ textarea.form-control {
 	}
 }
 // Our Team
+
 .mini-nav {
 	a {
 		color: $color-main-p;
@@ -818,11 +830,13 @@ textarea.form-control {
 		width: 288px;
 		display: none;
 		z-index: 100;
+
 		h3 {
 			color: $color-white;
 			font-size: 2rem;
 			margin-bottom: 20px;
 		}
+
 		h4 {
 			color: $color-white;
 			font-size: 2rem;
@@ -846,7 +860,7 @@ textarea.form-control {
 .dark-overlay::after {
 	content: '\A';
 	position: absolute;
- 	width: 90%;
+	width: 90%;
 	height: 100%;
 	top: 0;
 	left: 15px;
@@ -856,47 +870,75 @@ textarea.form-control {
 }
 
 .dark-overlay:hover:after {
-  opacity: 1;
+	opacity: 1;
 
 	.caption {
 		display: block;
 	}
 }
 // Murali
+
 .our-team {
 	h3 {
 		padding: 0 50px;
 		line-height: 20px;
 	}
 }
+
 .caption-murali {
-	padding: 20px;
+	padding: 20px 0;
+
 	h2 {
 		font-family: 'PlayfairDisplay-Regular';
 		font-size: 2.4rem;
 		margin-bottom: 10px;
 	}
+
 	h6 {
 		font-family: 'Merriweather-Regular';
 		font-size: 1.2rem;
-		color:  $color-placeholder;
+		color: $color-placeholder;
 	}
 }
-.icon {
-	width: 20px;
-	height: 20px;
-	margin: 0 10px;
-}
+
 .murali-social {
-	&::after {
-		content: "";
-		width: 20px;
-		height: 1px;
+	.icon {
+		width: 2rem;
+		height: 2rem;
+		margin: 0 8px;
+
+		&:hover {
+	   filter: invert(100%);
+		}
 	}
 }
 
+.lawyer-img--solo {
+	width: 100%;
+}
 
+.page-sub-content {
+	margin-top: 100px;
+	margin-bottom: 0;
+
+	&::before {
+		content: "";
+		position: absolute;
+		left: 5%;
+		width: 90%;
+		height: 1px;
+		margin-top: -52px;
+		background: $color-underline;
+	}
+
+	.page-sub-content__heading {
+		h3 {
+			margin-bottom: 40px;
+		}
+	}
+}
 //
+
 .text-block {
 	.content-text {
 		padding: 0 17px;

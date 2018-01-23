@@ -316,6 +316,13 @@ p {
 .p-bot-100 {
   padding-bottom: 100px; }
 
+.p-l-0 {
+  padding-left: 0px; }
+
+.align-bot {
+  position: relative;
+  bottom: 0; }
+
 .active {
   color: #BB804C; }
 
@@ -644,7 +651,7 @@ textarea.form-control {
   line-height: 20px; }
 
 .caption-murali {
-  padding: 20px; }
+  padding: 20px 0; }
   .caption-murali h2 {
     font-family: 'PlayfairDisplay-Regular';
     font-size: 2.4rem;
@@ -654,15 +661,30 @@ textarea.form-control {
     font-size: 1.2rem;
     color: #666767; }
 
-.icon {
-  width: 20px;
-  height: 20px;
-  margin: 0 10px; }
+.murali-social .icon {
+  width: 2rem;
+  height: 2rem;
+  margin: 0 8px; }
+  .murali-social .icon:hover {
+    -webkit-filter: invert(100%);
+            filter: invert(100%); }
 
-.murali-social::after {
-  content: "";
-  width: 20px;
-  height: 1px; }
+.lawyer-img--solo {
+  width: 100%; }
+
+.page-sub-content {
+  margin-top: 100px;
+  margin-bottom: 0; }
+  .page-sub-content::before {
+    content: "";
+    position: absolute;
+    left: 5%;
+    width: 90%;
+    height: 1px;
+    margin-top: -52px;
+    background: #BCBBBB; }
+  .page-sub-content .page-sub-content__heading h3 {
+    margin-bottom: 40px; }
 
 .text-block .content-text {
   padding: 0 17px; }

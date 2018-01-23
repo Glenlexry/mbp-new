@@ -5,7 +5,10 @@
 @media (min-width: 425px) {
   .our-team h3 {
     padding: 0 100px;
-    line-height: 20px; } }
+    line-height: 20px; }
+
+  .lawyer-img--solo {
+    width: 300px; } }
 @media (min-width: 480px) {
   .content-text .text-box {
     padding: 3vh 160px; }
@@ -120,6 +123,21 @@
     width: 500px;
     margin: auto; }
 
+  .text-md-left {
+    text-align: left !important; }
+
+  .text-md-right {
+    text-align: right !important; }
+
+  .p-md-top-0 {
+    padding-top: 0; }
+
+  .p-md-left-0 {
+    padding-left: 0; }
+
+  .float-md-left {
+    float: left; }
+
   .banner {
     padding: 100px 0; }
 
@@ -182,8 +200,15 @@
     text-align: left; }
 
   .fixed-box {
-    width: 924px;
+    width: 960px;
     margin: auto; }
+
+  .lawyer-img--solo {
+    width: 100%; }
+
+  .icon-box__contact-us {
+    position: relative;
+    bottom: 0px; }
 
   footer p {
     padding: 0; }
@@ -202,6 +227,9 @@
   .footer-content {
     padding: 50px;
     padding-bottom: 20px; } }
+@media (min-width: 1200px) {
+  .p-md-left-15 {
+    padding-left: 15px; } }
 @media (min-width: 1440px) {
   html, body {
     font-size: 12px; }
@@ -287,6 +315,9 @@
   .lawyer-box .caption {
     width: 410px;
     top: 45%; }
+
+  .icon-box__contact-us .contact-details img {
+    max-width: 24px; }
 
   footer .footer__logo {
     width: 303px; } }
