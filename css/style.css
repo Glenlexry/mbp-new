@@ -661,13 +661,15 @@ textarea.form-control {
     font-size: 1.2rem;
     color: #666767; }
 
-.murali-social .icon {
-  width: 2rem;
-  height: 2rem;
-  margin: 0 8px; }
-  .murali-social .icon:hover {
-    -webkit-filter: invert(100%);
-            filter: invert(100%); }
+.murali-social i {
+  color: #666767;
+  margin: 0 5px; }
+.murali-social .fa-facebook:hover {
+  color: #0071BC; }
+.murali-social .fa-linkedin:hover {
+  color: #007BB5; }
+.murali-social .fa-envelope-square:hover {
+  color: #FF0000; }
 
 .lawyer-img--solo {
   width: 100%; }

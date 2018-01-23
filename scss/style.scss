@@ -79,6 +79,9 @@ $color-black-footer: #010101;
 $color-nav-text: #231F1F;
 $color-placeholder: #666767;
 $color-underline: #BCBBBB;
+$color-facebook: #0071BC;
+$color-linkedin: #007BB5;
+$color-email: #FF0000;
 
 body,
 html {
@@ -902,14 +905,18 @@ textarea.form-control {
 }
 
 .murali-social {
-	.icon {
-		width: 2rem;
-		height: 2rem;
-		margin: 0 8px;
-
-		&:hover {
-	   filter: invert(100%);
-		}
+	i {
+		color: $color-placeholder;
+		margin: 0 5px;
+	}
+	.fa-facebook:hover {
+		color: $color-facebook;
+	}
+	.fa-linkedin:hover {
+		color: $color-linkedin;
+	}
+	.fa-envelope-square:hover {
+		color: $color-email;
 	}
 }
 
