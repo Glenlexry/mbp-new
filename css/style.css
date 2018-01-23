@@ -449,6 +449,13 @@ textarea.form-control {
   background-size: cover;
   padding: 80px 0; }
 
+.practce-area {
+  background-image: url("../img/practice-area/team-1.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 80px 0; }
+
 .banner h1 {
   color: #BB804C; }
 .banner h3 {
