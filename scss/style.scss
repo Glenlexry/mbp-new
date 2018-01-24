@@ -1247,6 +1247,8 @@ input::-webkit-input-placeholder {
 	color: transparent;
 	cursor: pointer;
 	display: block;
+  margin-top: 12px;
+	font-size: 1.3rem;
 }
 
 #demo-2 input[type=search]:hover {

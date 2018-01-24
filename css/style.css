@@ -897,7 +897,9 @@ input::-webkit-input-placeholder {
   padding-left: 5px;
   color: transparent;
   cursor: pointer;
-  display: block; }
+  display: block;
+  margin-top: 12px;
+  font-size: 1.3rem; }
 
 #demo-2 input[type=search]:hover {
   background-color: #fff; }

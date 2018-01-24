@@ -72,6 +72,10 @@
     #demo-2 input[type=search]:focus {
       width: 70px;
     }
+
+    #demo-2 input[type=search] {
+      margin-top: 0;
+    }
   }
 
   .navbar {
@@ -325,6 +329,10 @@
 		margin-left: -35px;
 		background: #BCBBBB;
   }
+
+  .box {
+    margin-right: 0;
+  }
   //
   footer {
     p {
@@ -516,6 +524,10 @@
   .box {
     max-width: 540px;
     padding: 119px 0;
+  }
+
+  .text-block ul li {
+    line-height: 40px;
   }
 
   //
