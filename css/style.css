@@ -751,6 +751,11 @@ textarea.form-control {
   height: 1px;
   margin-left: -35px;
   background: #BCBBBB; }
+.carousel-container a {
+  color: #000; }
+  .carousel-container a:hover {
+    color: #BB804C;
+    text-decoration: none; }
 
 .carousel-control.right {
   background-image: none; }

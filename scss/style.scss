@@ -1042,6 +1042,15 @@ textarea.form-control {
 		margin-left: -35px;
 		background: $color-underline;
 	}
+
+	a {
+		color: $color-black;
+
+		&:hover {
+			color: $color-gold;
+			text-decoration: none;
+		}
+	}
 }
 
 .carousel-control {
