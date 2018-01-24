@@ -282,6 +282,10 @@ p {
 .p-top-100 {
   padding-top: 100px; }
 
+.no-lr-padding {
+  padding-left: 0 !important;
+  padding-right: 0 !important; }
+
 /*padding bottom*/
 .p-bot-0 {
   padding-bottom: 0 !important; }
@@ -317,11 +321,14 @@ p {
   padding-bottom: 100px; }
 
 .p-l-0 {
-  padding-left: 0px; }
+  padding-left: 0; }
 
 .align-bot {
   position: relative;
   bottom: 0; }
+
+.inline-block {
+  display: inline-block; }
 
 .active {
   color: #BB804C; }
@@ -414,6 +421,16 @@ textarea.form-control {
 .btn-lg {
   padding: 13px; }
 
+.btn-black {
+  background-color: #333333;
+  color: #fff;
+  border-radius: 0;
+  padding: 10px 20px;
+  font-size: 1.4rem; }
+
+.btn-black:hover {
+  color: #BB8049; }
+
 .logo {
   width: 105%;
   height: auto; }
@@ -422,45 +439,44 @@ textarea.form-control {
   width: 10%; }
 
 .about-us {
-  background-image: url("../img/about-us/MBP_About-us-03.jpg");
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 80px 0; }
+  background-image: url("../img/about-us/MBP_About-us-03.jpg"); }
 
 .careers {
-  background-image: url("../img/careers/MBP_Career-06.jpg");
-  background-position: 61% 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 80px 0; }
+  background-image: url("../img/careers/MBP_Career-06.jpg"); }
 
 .contact-us {
-  background-image: url("../img/contact-us/MBP_Contact us-06.jpg");
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 80px 0; }
+  background-image: url("../img/contact-us/MBP_Contact us-06.jpg"); }
 
 .our-team {
-  background-image: url("../img/our-team/team4.jpg");
+  background-image: url("../img/our-team/team4.jpg"); }
+
+.practice-area {
+  background-image: url("../img/practice-area/team-1.jpg"); }
+
+.black-banner {
+  background-color: #000; }
+
+.banner {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 80px 0; }
+  .banner h1 {
+    color: #BB804C; }
+  .banner h3 {
+    color: #fff;
+    margin-top: 3rem; }
 
-.practce-area {
-  background-image: url("../img/practice-area/team-1.jpg");
+.banner-mini {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 80px 0; }
-
-.banner h1 {
-  color: #BB804C; }
-.banner h3 {
-  color: #fff;
-  margin-top: 3rem; }
+  padding: 40px 0; }
+  .banner-mini h1 {
+    color: #BB804C; }
+  .banner-mini h3 {
+    color: #fff;
+    margin-top: 3rem; }
 
 .bg-image__careers {
   position: relative;
@@ -537,6 +553,10 @@ textarea.form-control {
 
 #custom-form-container {
   width: 85%;
+  margin: auto; }
+
+#fixed-container {
+  width: 90%;
   margin: auto; }
 
 .body-content {
@@ -694,6 +714,83 @@ textarea.form-control {
     background: #BCBBBB; }
   .page-sub-content .page-sub-content__heading h3 {
     margin-bottom: 40px; }
+
+.text-block ul {
+  padding-left: 15px;
+  margin-bottom: 7vh; }
+  .text-block ul li {
+    font-family: "Poppins-Regular";
+    line-height: 26px;
+    color: #4D4E4E;
+    letter-spacing: 0.3px;
+    font-size: 1.3rem; }
+
+.box {
+  background-color: #BB804C;
+  padding: 76px 0;
+  max-width: 337px;
+  font-family: "PlayfairDisplay-regular";
+  margin: auto; }
+  .box h1 {
+    color: #fff;
+    margin-bottom: 30px; }
+
+.carousel-container h2 {
+  font-family: 'Merriweather-Regular'; }
+.carousel-container p {
+  text-align: right;
+  position: relative;
+  bottom: -9px; }
+.carousel-container::before {
+  content: " ";
+  position: relative;
+  display: block;
+  top: -20px;
+  left: 34px;
+  width: 100%;
+  height: 1px;
+  margin-left: -35px;
+  background: #BCBBBB; }
+
+.carousel-control.right {
+  background-image: none; }
+.carousel-control.left {
+  background-image: none; }
+
+.item {
+  display: inline-block; }
+
+.overlay {
+  position: relative; }
+  .overlay:hover {
+    -webkit-filter: drop-shadow(8px 8px 10px gray);
+            filter: drop-shadow(8px 8px 10px gray);
+    top: -1px; }
+
+.overlay::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1; }
+
+.grey:after {
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.carousel-inner img {
+  width: 100%; }
+
+.caption {
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  text-align: center;
+  color: #FFFFFF;
+  z-index: 20;
+  font-size: 3rem;
+  font-family: 'Merriweather-Regular'; }
 
 .text-block .content-text {
   padding: 0 17px; }

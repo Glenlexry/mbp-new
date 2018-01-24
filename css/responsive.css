@@ -210,6 +210,20 @@
     position: relative;
     bottom: 0px; }
 
+  .carousel-container::before {
+    display: none; }
+
+  .line::before {
+    content: " ";
+    position: relative;
+    display: block;
+    bottom: 110px;
+    left: 34px;
+    width: 100%;
+    height: 1px;
+    margin-left: -35px;
+    background: #BCBBBB; }
+
   footer p {
     padding: 0; }
   footer .contact-details .contact-detail {
@@ -319,6 +333,11 @@
   .icon-box__contact-us .contact-details img {
     max-width: 24px; }
 
+  .box {
+    background-color: #BB804C;
+    padding: 105px 0;
+    max-width: 370px; }
+
   footer .footer__logo {
     width: 303px; } }
 @media (min-width: 2560px) {
@@ -337,6 +356,10 @@
 
   .form-control {
     margin-top: 30px; }
+
+  .box {
+    max-width: 540px;
+    padding: 119px 0; }
 
   #demo-2 input[type=search] {
     width: 39px; }

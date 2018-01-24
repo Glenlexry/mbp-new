@@ -150,6 +150,7 @@ p {
 //
 //padding margin classes
 /*margin top*/
+
 .m-top-0 {
 	margin-top: 0 !important;
 }
@@ -206,6 +207,7 @@ p {
 	margin-top: 100px;
 }
 /*margin bottom*/
+
 .m-bot-0 {
 	margin-bottom: 0 !important;
 }
@@ -254,6 +256,7 @@ p {
 	margin-bottom: 100px;
 }
 /*margin left*/
+
 .m-l-0 {
 	margin-left: 0 !important;
 }
@@ -298,6 +301,7 @@ p {
 	margin-left: 100px;
 }
 /*margin right*/
+
 .m-r-0 {
 	margin-right: 0 !important;
 }
@@ -342,7 +346,6 @@ p {
 	margin-right: 100px;
 }
 /*padding top*/
-
 .p-top-0 {
 	padding-top: 0 !important;
 }
@@ -390,7 +393,13 @@ p {
 .p-top-100 {
 	padding-top: 100px;
 }
+
+.no-lr-padding {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
 /*padding bottom*/
+
 .p-bot-0 {
 	padding-bottom: 0 !important;
 }
@@ -436,12 +445,16 @@ p {
 }
 
 .p-l-0 {
-	padding-left: 0px;
+	padding-left: 0;
 }
 
 .align-bot {
 	position: relative;
 	bottom: 0;
+}
+
+.inline-block {
+	display: inline-block;
 }
 //
 
@@ -558,6 +571,17 @@ textarea.form-control {
 .btn-lg {
 	padding: 13px;
 }
+
+.btn-black {
+	background-color: $color-grey-italic;
+	color: $color-white;
+	border-radius: 0;
+	padding: 10px 20px;
+	font-size: 1.4rem;
+}
+.btn-black:hover {
+	color: $color-gold-italic;
+}
 //
 
 .logo {
@@ -572,45 +596,50 @@ textarea.form-control {
 
 .about-us {
 	background-image: url("../img/about-us/MBP_About-us-03.jpg");
-	background-position: 50% 50%;
-	background-repeat: no-repeat;
-	background-size: cover;
-	padding: 80px 0;
 }
 
 .careers {
 	background-image: url("../img/careers/MBP_Career-06.jpg");
-	background-position: 61% 50%;
-	background-repeat: no-repeat;
-	background-size: cover;
-	padding: 80px 0;
 }
 
 .contact-us {
 	background-image: url("../img/contact-us/MBP_Contact us-06.jpg");
-	background-position: 50% 50%;
-	background-repeat: no-repeat;
-	background-size: cover;
-	padding: 80px 0;
 }
 
 .our-team {
 	background-image: url("../img/our-team/team4.jpg");
-	background-position: 50% 50%;
-	background-repeat: no-repeat;
-	background-size: cover;
-	padding: 80px 0;
 }
 
-.practce-area {
+.practice-area {
 	background-image: url("../img/practice-area/team-1.jpg");
-	background-position: 50% 50%;
-	background-repeat: no-repeat;
-	background-size: cover;
-	padding: 80px 0;
+}
+
+.black-banner {
+	background-color: $color-black;
 }
 
 .banner {
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 80px 0;
+
+	h1 {
+		color: $color-gold;
+	}
+
+	h3 {
+		color: $color-white;
+		margin-top: 3rem;
+	}
+}
+
+.banner-mini {
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 40px 0;
+
 	h1 {
 		color: $color-gold;
 	}
@@ -709,6 +738,11 @@ textarea.form-control {
 
 #custom-form-container {
 	width: 85%;
+	margin: auto;
+}
+
+#fixed-container {
+	width: 90%;
 	margin: auto;
 }
 
@@ -917,12 +951,15 @@ textarea.form-control {
 		color: $color-placeholder;
 		margin: 0 5px;
 	}
+
 	.fa-facebook:hover {
 		color: $color-facebook;
 	}
+
 	.fa-linkedin:hover {
 		color: $color-linkedin;
 	}
+
 	.fa-envelope-square:hover {
 		color: $color-email;
 	}
@@ -952,8 +989,116 @@ textarea.form-control {
 		}
 	}
 }
-//
+//Practice-AREA
+//Insurance
 
+.text-block {
+	ul {
+		padding-left: 15px;
+		margin-bottom: 7vh;
+
+		li {
+			font-family: "Poppins-Regular";
+			line-height: 26px;
+			color: $color-main-p;
+			letter-spacing: 0.3px;
+			font-size: 1.3rem;
+		}
+	}
+}
+
+.box {
+	background-color: $color-gold;
+	padding: 76px 0;
+	max-width: 337px;
+	font-family: "PlayfairDisplay-regular";
+	margin: auto;
+
+	h1 {
+		color: $color-white;
+		margin-bottom: 30px;
+	}
+}
+
+.carousel-container {
+	h2 {
+		font-family: 'Merriweather-Regular';
+	}
+
+	p {
+		text-align: right;
+		position: relative;
+		bottom: -9px;
+	}
+
+	&::before {
+		content: " ";
+		position: relative;
+		display: block;
+		top: -20px;
+		left: 34px;
+		width: 100%;
+		height: 1px;
+		margin-left: -35px;
+		background: $color-underline;
+	}
+}
+
+.carousel-control {
+	&.right {
+		background-image: none;
+	}
+
+	&.left {
+		background-image: none;
+	}
+}
+
+.item {
+	display: inline-block;
+}
+
+.overlay {
+	position: relative;
+
+	&:hover {
+		filter: drop-shadow(8px 8px 10px gray);
+		top: -1px;
+	}
+}
+
+.overlay::after {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+}
+
+.grey:after {
+	background-color: rgba(0,0,0,0.5);
+}
+
+.carousel-inner {
+	img {
+		width: 100%;
+	}
+}
+
+.caption {
+	position: absolute;
+	top: 45%;
+	width: 100%;
+	text-align: center;
+	color: $color-background-white;
+	z-index: 20;
+	font-size: 3rem;
+	font-family: 'Merriweather-Regular';
+}
+
+//
 .text-block {
 	.content-text {
 		padding: 0 17px;
