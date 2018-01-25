@@ -150,7 +150,6 @@ p {
 //
 //padding margin classes
 /*margin top*/
-
 .m-top-0 {
 	margin-top: 0 !important;
 }
@@ -207,7 +206,6 @@ p {
 	margin-top: 100px;
 }
 /*margin bottom*/
-
 .m-bot-0 {
 	margin-bottom: 0 !important;
 }
@@ -256,7 +254,6 @@ p {
 	margin-bottom: 100px;
 }
 /*margin left*/
-
 .m-l-0 {
 	margin-left: 0 !important;
 }
@@ -301,7 +298,6 @@ p {
 	margin-left: 100px;
 }
 /*margin right*/
-
 .m-r-0 {
 	margin-right: 0 !important;
 }
@@ -346,6 +342,7 @@ p {
 	margin-right: 100px;
 }
 /*padding top*/
+
 .p-top-0 {
 	padding-top: 0 !important;
 }
@@ -399,7 +396,6 @@ p {
 	padding-right: 0 !important;
 }
 /*padding bottom*/
-
 .p-bot-0 {
 	padding-bottom: 0 !important;
 }
@@ -579,8 +575,11 @@ textarea.form-control {
 	padding: 10px 20px;
 	font-size: 1.4rem;
 }
+
 .btn-black:hover {
-	color: $color-gold-italic;
+	color: $color-black;
+	background-color: $color-white;
+	transition: all 0.2s;
 }
 //
 
@@ -873,7 +872,6 @@ textarea.form-control {
 		position: absolute;
 		top: 40%;
 		width: 288px;
-		display: none;
 		z-index: 100;
 
 		h3 {
@@ -914,7 +912,7 @@ textarea.form-control {
 	transition: all 0.2s;
 }
 
-.dark-overlay:hover:after {
+.dark-overlay:after {
 	opacity: 1;
 
 	.caption {
@@ -945,23 +943,53 @@ textarea.form-control {
 		color: $color-placeholder;
 	}
 }
+@keyframes top {
+	1% {
+		opacity: 0;
+		transform: translateY(10%);
+	}
+	100% {
+		opacity: 1;
+	}
+}
 
 .murali-social {
-	i {
-		color: $color-placeholder;
-		margin: 0 5px;
+	ul {
+		list-style-type: none;
+
+		li {
+			display: inline-block;
+			margin: 0;
+			a {
+				&:hover {
+					color: none;
+					text-decoration: none;
+				}
+				i {
+					width: 50px;
+					text-align: center;
+					padding: 10px 0;
+				}
+			}
+		}
 	}
 
-	.fa-facebook:hover {
-		color: $color-facebook;
+	.fa-facebook-f:hover {
+		background-color: $color-facebook;
+		color: $color-white;
+		animation: top 1s ease;
 	}
 
-	.fa-linkedin:hover {
-		color: $color-linkedin;
+	.fa-linkedin-in:hover {
+		background-color: $color-linkedin;
+		color: $color-white;
+		animation: top 1s ease;
 	}
 
-	.fa-envelope-square:hover {
-		color: $color-email;
+	.fa-envelope:hover {
+		background-color: $color-email;
+		color: $color-white;
+		animation: top 1s ease;
 	}
 }
 
@@ -1073,6 +1101,7 @@ textarea.form-control {
 	&:hover {
 		filter: drop-shadow(8px 8px 10px gray);
 		top: -1px;
+		transition: all 0.2s;
 	}
 }
 
@@ -1106,8 +1135,8 @@ textarea.form-control {
 	font-size: 3rem;
 	font-family: 'Merriweather-Regular';
 }
-
 //
+
 .text-block {
 	.content-text {
 		padding: 0 17px;
@@ -1247,7 +1276,7 @@ input::-webkit-input-placeholder {
 	color: transparent;
 	cursor: pointer;
 	display: block;
-  margin-top: 12px;
+	margin-top: 12px;
 	font-size: 1.3rem;
 }
 

@@ -180,6 +180,13 @@
   .dark-overlay::after {
     width: 94.5%;
   }
+  //Murali
+  .page-sub-content {
+  	&::before {
+      left: 13%;
+      width: 74%;
+  	}
+  }
   //
   footer {
     .social-icons > a img {
@@ -301,6 +308,20 @@
   .fixed-box {
     width: 960px;
     margin: auto;
+  }
+
+  .dark-overlay:after {
+    opacity: 0;
+  }
+
+  .dark-overlay:hover:after {
+    opacity: 1;
+  }
+
+  .lawyer-box {
+    .caption {
+      display: none;
+    }
   }
 
   // Murali
@@ -478,6 +499,13 @@
   .icon-box__contact-us .contact-details img {
     max-width: 24px;
   }
+  .page-sub-content {
+    &::before {
+      left: 16%;
+      width: 67%;
+    }
+  }
+
   //insurance
 
   .box {
