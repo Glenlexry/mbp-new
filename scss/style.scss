@@ -1249,7 +1249,7 @@ input::-webkit-search-decoration {
 }
 
 input[type=search] {
-	background: #ededed url("../img/misc/Asset-11.png") no-repeat 9px center;
+	background: #ededed url("../img/misc/Asset-11.png") no-repeat 12px center;
 	border: solid 1px #ccc;
 	padding: 9px 10px 9px 32px;
 	width: 55px;
@@ -1271,8 +1271,7 @@ input::-webkit-input-placeholder {
 }
 
 #demo-2 input[type=search] {
-	width: 22px;
-	padding-left: 5px;
+	width: 0px;
 	color: transparent;
 	cursor: pointer;
 	display: block;
