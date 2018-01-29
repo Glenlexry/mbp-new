@@ -1,29 +1,25 @@
 @media (min-width: 375px) {
   // Murali
-
   .our-team {
-  	h3 {
-  		padding: 0 80px;
-  		line-height: 20px;
-  	}
+    h3 {
+      padding: 0 80px;
+      line-height: 20px;
+    }
   }
 }
-
 @media (min-width: 425px) {
   // Murali
-
   .our-team {
-  	h3 {
-  		padding: 0 100px;
-  		line-height: 20px;
-  	}
+    h3 {
+      padding: 0 100px;
+      line-height: 20px;
+    }
   }
 
   .lawyer-img--solo {
-  	width: 300px;
+    width: 300px;
   }
 }
-
 @media (min-width: 480px) {
   .content-text {
     .text-box {
@@ -144,16 +140,13 @@
         width: 100px;
       }
 
-      .text-box {
-
-      }
+      .text-box {}
     }
 
     .icon-box:last-child {
-      margin-bottom: 0px;
+      margin-bottom: 0;
     }
   }
-
   //contact-us
   .form-group {
     margin-bottom: 40px;
@@ -162,7 +155,6 @@
   .form-control {
     margin-top: 10px;
   }
-
   //our-team
   .fixed-box {
     width: 617px;
@@ -178,16 +170,15 @@
   }
   //Murali
   .page-sub-content {
-  	&::before {
+    &::before {
       left: 13%;
       width: 74%;
-  	}
+    }
   }
   //
   footer {
     .social-icons > a img {
-      margin: 2vh 0;
-      margin-right: 4px;
+      margin: 2vh 4px 2vh 0;
     }
 
     .contact-details {
@@ -201,25 +192,32 @@
   .container {
     width: 70%;
   }
+
   #custom-container {
     width: 100%;
   }
+
   #custom-form-container {
-  	width: 500px;
+    width: 500px;
     margin: auto;
   }
+
   .text-md-left {
     text-align: left !important;
   }
+
   .text-md-right {
     text-align: right !important;
   }
+
   .p-md-top-0 {
     padding-top: 0;
   }
+
   .p-md-left-0 {
     padding-left: 0;
   }
+
   .float-md-left {
     float: left;
   }
@@ -254,10 +252,10 @@
   .content-text {
     margin-bottom: 0;
     padding: 0;
+
     .icon-box {
       .text-box {
-        padding: 0 50px;
-        padding-top: 30px;
+        padding: 30px 50px 0;
       }
     }
   }
@@ -270,7 +268,6 @@
   .form-group {
     margin-bottom: 58px;
   }
-
   //contact-us
   .form-group {
     margin-bottom: 35px;
@@ -279,16 +276,17 @@
   .form-control {
     margin-top: 5px;
   }
-
   //Newsletter
   .bg-image__newsletter {
     padding: 16vh 20px;
-  	h1 {
-  		margin-bottom: 20px;
-  	}
-  	h3 {
-  		margin-bottom: 80px;
-  	}
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      margin-bottom: 80px;
+    }
   }
 
   .email {
@@ -297,9 +295,8 @@
   }
 
   .email::placeholder {
-    text-align: left
+    text-align: left;
   }
-
   // our team
   .fixed-box {
     width: 960px;
@@ -319,14 +316,14 @@
       display: none;
     }
   }
-
   // Murali
   .lawyer-img--solo {
-  	width: 100%;
+    width: 100%;
   }
+
   .icon-box__contact-us {
     position: relative;
-    bottom: 0px;
+    bottom: 0;
   }
   //insurances
   .carousel-container {
@@ -337,58 +334,119 @@
 
   .line::before {
     content: " ";
-		position: relative;
-		display: block;
-		bottom: 110px;
-		left: 34px;
-		width: 100%;
-		height: 1px;
-		margin-left: -35px;
-		background: #BCBBBB;
+    position: relative;
+    display: block;
+    bottom: 110px;
+    left: 34px;
+    width: 100%;
+    height: 1px;
+    margin-left: -35px;
+    background: #BCBBBB;
   }
 
   .box {
     margin-right: 0;
+  }
+  //homepage
+
+  .homepage__box--parent {
+    padding-bottom: 163px;
+    padding-top: 34px;
+  }
+
+  .homepage__box {
+    padding-bottom: 15px;
+  }
+
+  .verticle-line {
+    border-right: solid #BB804C 2px;
+  }
+
+  .homepage__box--icon {
+    padding: 20px 0;
+  }
+
+  .crop {
+  	height: 46vh;
+  }
+
+  .crop--target {
+    position: relative;
+    top: -163px;
+  }
+
+  .carousel-text-container {
+    height:  52.6vh;
+    padding-top: 62px;
+    text-align: left !important;
+  }
+
+  .carousel-inner img {
+    width: auto;
+  }
+  #custom-container-2 {
+    padding-left: 70px;
+  }
+  .carousel-control {
+    opacity: 1;
+  }
+  .glyphicon-menu-left,.glyphicon-menu-right {
+    top: 182px;
+    font-size: 3rem;
+  }
+  .flip-text {
+    padding: 0 20px;
+
+    h3::after {
+  		left: 62%;
+  	}
   }
   //
   footer {
     p {
       padding: 0;
     }
+
     .contact-details {
       .contact-detail {
         margin-bottom: 12px;
+
         img {
-          margin: 0;
-          margin-right: 12px;
+          margin: 0 12px 0 0;
         }
       }
     }
+
     .page-content {
       .content-text {
         text-align: left;
+
         p {
           line-height: 19px;
         }
       }
+
       .about-links {
         text-align: right;
       }
     }
   }
+
   .footer-content {
-    padding: 50px;
-    padding-bottom: 20px;
+    padding: 50px 50px 20px;
   }
 }
 @media (min-width: 1200px) {
   .p-md-left-15 {
     padding-left: 15px;
   }
+  .carousel-inner img {
+    width: 100%;
+  }
 }
-
 @media (min-width: 1440px) {
-  html,body {
+  body,
+  html {
     font-size: 12px;
   }
 
@@ -410,12 +468,12 @@
   }
 
   .footer-content {
-    padding: 50px 197px;
-    padding-bottom: 20px;
+    padding: 50px 197px 20px;
   }
 
   .navbar-header {
     margin: 20px 0;
+
     img {
       width: 21%;
     }
@@ -428,12 +486,12 @@
   }
 
   input[type=search] {
-    background: #ededed url(../img/misc/Asset-11.png) no-repeat 12px center;
+    background: #ededed url("../img/misc/Asset-11.png") no-repeat 12px center;
   }
+
   #demo-2 input[type=search]:focus {
     padding-left: 40px;
   }
-
   //contact-us
   .form-group {
     margin-bottom: 35px;
@@ -442,7 +500,6 @@
   .form-control {
     margin-top: 15px;
   }
-
   //Newsletter
   .custom-xxl-container {
     width: 80%;
@@ -468,19 +525,18 @@
   .email::placeholder {
     font-size: 1.6rem;
   }
-
   //our-team
   .fixed-box {
-    width: 1300px;
+    width: 1080px;
     margin: auto;
   }
 
   .lawyer-box {
-    width: 433px;
+    width: 360px;
   }
 
   .lawyer-img {
-    width: 410px;
+    width: 346px;
   }
 
   .lawyer-box .caption {
@@ -491,32 +547,36 @@
   .icon-box__contact-us .contact-details img {
     max-width: 24px;
   }
+
   .page-sub-content {
     &::before {
       left: 16%;
       width: 67%;
     }
   }
-
   //insurance
-
   .box {
     background-color: #BB804C;
     padding: 105px 0;
     max-width: 370px;
   }
+  //homepage
+  .carousel-control {
+    width: 9%;
+  }
+
+  .glyphicon-menu-left,.glyphicon-menu-right {
+    top: 250px;
+  }
 
   //
-
   footer .footer__logo {
     width: 303px;
   }
 }
-
-
-
 @media (min-width: 2560px) {
-  html,body {
+  body,
+  html {
     font-size: 17px;
   }
 
@@ -527,10 +587,9 @@
   }
 
   #custom-form-container {
-  	width: 800px;
+    width: 800px;
     margin: auto;
   }
-
   //contact-us
   .form-group {
     margin-bottom: 40px;
@@ -539,7 +598,6 @@
   .form-control {
     margin-top: 30px;
   }
-
   // insurance
   .box {
     max-width: 540px;
@@ -549,12 +607,9 @@
   .text-block ul li {
     line-height: 40px;
   }
-
   //
-
-
   input[type=search] {
-    background: #ededed url(../img/misc/Asset-11.png) no-repeat 18px center;
+    background: #ededed url("../img/misc/Asset-11.png") no-repeat 18px center;
   }
 
   #demo-2 input[type=search]:focus {
@@ -588,9 +643,11 @@
   footer .page-content .content-text p {
     line-height: 25px;
   }
+
   footer .social-icons > a img {
     width: 40px;
   }
+
   .content-text .icon-box .icon {
     width: 130px;
   }
@@ -606,9 +663,7 @@
       margin-bottom: 16px;
     }
   }
-
   //Newsletter
-
   .custom-xxl-container {
     width: 80%;
     margin: auto;

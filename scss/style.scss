@@ -150,6 +150,7 @@ p {
 //
 //padding margin classes
 /*margin top*/
+
 .m-top-0 {
 	margin-top: 0 !important;
 }
@@ -206,6 +207,7 @@ p {
 	margin-top: 100px;
 }
 /*margin bottom*/
+
 .m-bot-0 {
 	margin-bottom: 0 !important;
 }
@@ -239,7 +241,7 @@ p {
 }
 
 .m-bot-50 {
-	margin-bottom: 50px;
+	margin-bottom: 50px !important;
 }
 
 .m-bot-60 {
@@ -254,6 +256,7 @@ p {
 	margin-bottom: 100px;
 }
 /*margin left*/
+
 .m-l-0 {
 	margin-left: 0 !important;
 }
@@ -298,6 +301,7 @@ p {
 	margin-left: 100px;
 }
 /*margin right*/
+
 .m-r-0 {
 	margin-right: 0 !important;
 }
@@ -342,7 +346,6 @@ p {
 	margin-right: 100px;
 }
 /*padding top*/
-
 .p-top-0 {
 	padding-top: 0 !important;
 }
@@ -396,6 +399,7 @@ p {
 	padding-right: 0 !important;
 }
 /*padding bottom*/
+
 .p-bot-0 {
 	padding-bottom: 0 !important;
 }
@@ -556,6 +560,7 @@ textarea.form-control {
 		bottom: 2px;
 		color: $color-white;
 		box-shadow: 0 2px 7px -2px rgba(0,0,0,0.75);
+		background-color: lighten($color-gold, 2%);
 	}
 
 	&:active {
@@ -735,6 +740,11 @@ textarea.form-control {
 	margin: auto;
 }
 
+#custom-container-2 {
+	width: 82%;
+	margin: auto;
+}
+
 #custom-form-container {
 	width: 85%;
 	margin: auto;
@@ -786,7 +796,7 @@ textarea.form-control {
 
 	p {
 		font-family: "Poppins-Regular";
-		line-height: 26px;
+		line-height: 19px;
 		color: $color-main-p;
 		letter-spacing: 0.3px;
 	}
@@ -821,16 +831,82 @@ textarea.form-control {
 .bg-grey {
 	background-color: $color-grey-background;
 }
+
+.bg-black {
+	background-color: $color-black;
+}
 //Homepage
-.video-wrap {
-	height: 500px;
+
+.video-banner {
+	height: 100vh;
 	position: relative;
-	left: -140px;
+	width: 100vw;
+	overflow: hidden;
 }
 
+.video {
+	width: auto;
+	position: absolute;
+}
 
+.homepage__box--icon {
+	padding: 50px 0 30px;
 
+	img {
+		height: 60px;
+	}
+}
 
+.homepage__box--caption {
+	h3 {
+		font-family: "Poppins-Regular";
+		color: $color-gold;
+		font-weight: 600;
+	}
+}
+
+.carousel-indicators__down {
+	bottom: 0 !important;
+}
+
+.content-text-bold {
+	h2 {
+		font-family: 'Merriweather-Regular';
+	}
+}
+
+.btn-home {
+	padding: 12px 21px !important;
+}
+
+.homepage__index-heading {
+	margin-bottom: 30px;
+}
+//boostrap hack
+
+.carousel-indicators {
+	li {
+		border-radius: 0;
+		width: 25px;
+		height: 4px;
+		margin: 0;
+		background-color: $color-white;
+		border: none;
+		margin: 0 2px;
+	}
+
+	.active {
+		width: 25px;
+		height: 3px;
+		background-color: $color-gold;
+		margin: 0 2px;
+		border: none;
+	}
+}
+
+#myCarousel {
+	height: 200px;
+}
 //contact-us
 
 .icon-box__contact-us {
@@ -958,6 +1034,7 @@ textarea.form-control {
 		opacity: 0;
 		transform: translateY(10%);
 	}
+
 	100% {
 		opacity: 1;
 	}
@@ -970,11 +1047,13 @@ textarea.form-control {
 		li {
 			display: inline-block;
 			margin: 0;
+
 			a {
 				&:hover {
 					color: none;
 					text-decoration: none;
 				}
+
 				i {
 					width: 50px;
 					text-align: center;
@@ -1281,7 +1360,7 @@ input::-webkit-input-placeholder {
 }
 
 #demo-2 input[type=search] {
-	width: 0px;
+	width: 0;
 	color: transparent;
 	cursor: pointer;
 	display: block;
@@ -1314,4 +1393,50 @@ input::-webkit-input-placeholder {
 iframe {
 	height: 400px;
 	width: 100%;
+}
+//flip
+
+.flip-container {
+	perspective: 1000;
+}
+
+.flip-container.hover .flipper,
+.flip-container:hover .flipper {
+	transform: rotateY(180deg);
+}
+
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+
+.front, .back {
+	backface-visibility: hidden;
+}
+
+.back {
+	transform: rotateY(180deg);
+	position: absolute;
+	top: 20px;
+	width: 100%;
+}
+
+.flip-text {
+
+	h3::after {
+		content: " ";
+		position: relative;
+		display: block;
+		bottom: -19px;
+		left: 54%;
+		width: 40px;
+		height: 1px;
+		margin-left: -35px;
+		background: #fff;
+	}
+
+	p {
+		color: $color-white;
+	}
 }
