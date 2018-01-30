@@ -571,6 +571,9 @@
     max-width: 370px;
   }
   //homepage
+  .video-banner {
+  	height: 800px;
+  }
   .carousel-control {
     width: 9%;
   }
@@ -604,6 +607,9 @@
   }
   .dark-overlay::after {
     width: 95.5%;
+  }
+  .video-banner {
+    height: 1000px;
   }
 }
 

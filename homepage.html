@@ -512,7 +512,9 @@
       var container = document.querySelector('.video-banner');
       var video = document.querySelector('.video');
 
-      function adapt() {
+
+
+      setTimeout(function adapt() {
         var container_width = container.offsetWidth;
         var container_height = container.offsetHeight;
 
@@ -520,11 +522,12 @@
         video.style.width = container_width + "px";
 
         if (video.offsetHeight < container_height) {
-          video.style.height = 108 + "%";
-          video.style.width = 102 + "%";
+          video.style.height = container_height + "px";
+          video.style.width = "auto";
         }
+
         video.style.left = (((video.offsetWidth - container_width) / 2) * -1) + 'px';
-      }
+      }, 500);
       window.addEventListener('load', adapt);
       window.addEventListener('resize', adapt);
     </script>
