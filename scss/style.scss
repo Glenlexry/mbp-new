@@ -578,8 +578,8 @@ textarea.form-control {
 }
 
 .btn-black:hover {
-	color: $color-black;
-	background-color: $color-white;
+	color: $color-white;
+	background-color: lighten($color-grey-italic, 10%);
 	transition: all 0.2s;
 }
 //
@@ -747,7 +747,7 @@ textarea.form-control {
 }
 
 #fixed-container {
-	width: 86%;
+	width: 72%;
 	margin: auto;
 }
 
@@ -1448,5 +1448,21 @@ iframe {
 
 	p {
 		color: $color-white;
+	}
+}
+.link-hover {
+	color: $color-white;
+	&:hover {
+		color: $color-gold;
+		text-decoration: none;
+	}
+}
+.practice-area {
+	&__heading {
+		font-size: 2rem;
+	}
+
+	&__overlay-text {
+		font-size: 2rem !important;
 	}
 }
