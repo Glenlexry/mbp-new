@@ -70,7 +70,7 @@
     </header>
 
     <div class="video-banner">
-      <video  id="video"  class="video" poster="img/homepage/waterdrop.jpg" preload="auto" playsinline autoplay loop>
+      <video id="video" class="video" poster="img/homepage/waterdrop.jpg" preload="auto" playsinline autoplay loop>
 
         <source src="video/4636532.m4v">
           <source src="video/waterdrop.mp4" type="video/mp4">
@@ -533,21 +533,26 @@
       window.addEventListener('resize', adapt);
     </script>
     <script>
-    var video = document.getElementById('video');
+      var video = document.getElementById('video');
 
-     video.addEventListener('click',function(){ video.play(); },false);
-
+      video.addEventListener('click', function() {
+        video.play();
+      }, false);
     </script>
-    <script type="text/javascript">
-    $(document).ready(function() {
-    $("#video1").bind("click", function() {
-    var vid = $(this).get(0);
-    if (vid.paused) { vid.play(); }
-    else { vid.pause(); }
-    });
-});
-</script>
+
     <script src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $("#video1").bind("click", function() {
+          var vid = $(this).get(0);
+          if (vid.paused) {
+            vid.play();
+          } else {
+            vid.pause();
+          }
+        });
+      });
+    </script>
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/scrollreveal.min.js"></script>
     <script type="text/javascript" src="js/MBP.js"></script>
