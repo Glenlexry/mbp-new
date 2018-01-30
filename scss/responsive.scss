@@ -569,6 +569,10 @@
     top: 250px;
   }
 
+  .flip-text h3::after {
+    left: 54%;
+  }
+
   //
   footer .footer__logo {
     width: 303px;
@@ -606,6 +610,15 @@
 
   .text-block ul li {
     line-height: 40px;
+  }
+  //homepage
+  .flip-text h3::after {
+    left: 46%;
+    width: 25%;
+  }
+  .homepage__box--parent {
+    padding-bottom: 201px;
+    padding-top: 51px;
   }
   //
   input[type=search] {
