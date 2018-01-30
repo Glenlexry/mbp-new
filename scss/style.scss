@@ -150,7 +150,6 @@ p {
 //
 //padding margin classes
 /*margin top*/
-
 .m-top-0 {
 	margin-top: 0 !important;
 }
@@ -207,7 +206,6 @@ p {
 	margin-top: 100px;
 }
 /*margin bottom*/
-
 .m-bot-0 {
 	margin-bottom: 0 !important;
 }
@@ -256,7 +254,6 @@ p {
 	margin-bottom: 100px;
 }
 /*margin left*/
-
 .m-l-0 {
 	margin-left: 0 !important;
 }
@@ -301,7 +298,6 @@ p {
 	margin-left: 100px;
 }
 /*margin right*/
-
 .m-r-0 {
 	margin-right: 0 !important;
 }
@@ -346,6 +342,7 @@ p {
 	margin-right: 100px;
 }
 /*padding top*/
+
 .p-top-0 {
 	padding-top: 0 !important;
 }
@@ -399,7 +396,6 @@ p {
 	padding-right: 0 !important;
 }
 /*padding bottom*/
-
 .p-bot-0 {
 	padding-bottom: 0 !important;
 }
@@ -1031,7 +1027,7 @@ textarea.form-control {
 }
 @keyframes top {
 	1% {
-		opacity: 0;
+		opacity: 0.5;
 		transform: translateY(10%);
 	}
 
@@ -1055,30 +1051,40 @@ textarea.form-control {
 				}
 
 				i {
-					width: 50px;
+					width: 45px;
+					margin: 0;
 					text-align: center;
 					padding: 10px 0;
+					background-size: 100% 200%;
+					transition: background-position 0.2s;
+					color: $color-white;
 				}
 			}
 		}
 	}
 
-	.fa-facebook-f:hover {
-		background-color: $color-facebook;
-		color: $color-white;
-		animation: top 1s ease;
+	.fa-facebook-f {
+		background-image: linear-gradient(to bottom, $color-facebook 50% ,$color-background-white 50%);
+		&:hover {
+			background-position: 0 -100%;
+			color: $color-facebook;
+		}
 	}
 
-	.fa-linkedin-in:hover {
-		background-color: $color-linkedin;
-		color: $color-white;
-		animation: top 1s ease;
+	.fa-linkedin-in {
+		background-image: linear-gradient(to bottom, $color-linkedin 50%, $color-background-white 50%);
+		&:hover {
+			background-position: 0 -100%;
+			color: $color-linkedin;
+		}
 	}
 
-	.fa-envelope:hover {
-		background-color: $color-email;
-		color: $color-white;
-		animation: top 1s ease;
+	.fa-envelope{
+		background-image: linear-gradient(to bottom, $color-email 50%, $color-background-white 50%);
+		&:hover {
+			background-position: 0 -100%;
+			color: $color-email;
+		}
 	}
 }
 
@@ -1294,7 +1300,8 @@ footer {
 	}
 
 	.social:hover {
-		filter: invert(100%)
+		filter: invert(100%);
+		transition: all 0.2s;
 	}
 
 	h4 {
@@ -1411,7 +1418,8 @@ iframe {
 	position: relative;
 }
 
-.front, .back {
+.back,
+.front {
 	backface-visibility: hidden;
 }
 
@@ -1423,7 +1431,6 @@ iframe {
 }
 
 .flip-text {
-
 	h3::after {
 		content: " ";
 		position: relative;
