@@ -70,9 +70,9 @@
     </header>
 
     <div class="video-banner">
-      <video class="video" poster="img/homepage/waterdrop.jpg" preload="auto" playsinline autoplay loop>
+      <video  id="video"  class="video" poster="img/homepage/waterdrop.jpg" preload="auto" playsinline autoplay loop>
         <source src="video/4636532.mp4" type="video/mp4">
-        <source src="video/4636532.m4v" type="video/m4v">
+        <source src="video/4636532.m4v">
 
       </video>
     </div>
@@ -532,6 +532,10 @@
       }, 500);
       window.addEventListener('load', adapt);
       window.addEventListener('resize', adapt);
+    </script>
+    <script>
+    var video = document.getElementById('video');
+ video.addEventListener('click',function(){ video.play(); },false);
     </script>
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
