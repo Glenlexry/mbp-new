@@ -235,7 +235,7 @@ p {
 }
 
 .m-bot-40 {
-	margin-bottom: 40px;
+	margin-bottom: 40px !important;
 }
 
 .m-bot-50 {
@@ -747,7 +747,7 @@ textarea.form-control {
 }
 
 #fixed-container {
-	width: 90%;
+	width: 86%;
 	margin: auto;
 }
 
@@ -760,7 +760,7 @@ textarea.form-control {
 }
 
 .index-heading {
-	margin-bottom: 7vh;
+	margin-bottom: 4vh;
 
 	h3 {
 		color: $color-gold;
@@ -792,7 +792,7 @@ textarea.form-control {
 
 	p {
 		font-family: "Poppins-Regular";
-		line-height: 19px;
+		line-height: 24px;
 		color: $color-main-p;
 		letter-spacing: 0.3px;
 	}
@@ -867,7 +867,7 @@ textarea.form-control {
 
 .content-text-bold {
 	h2 {
-		font-family: 'Merriweather-Regular';
+		font-family: 'PlayfairDisplay-Regular';
 	}
 }
 
@@ -1132,7 +1132,7 @@ textarea.form-control {
 
 .box {
 	background-color: $color-gold;
-	padding: 76px 0;
+	padding: 60px 0;
 	max-width: 337px;
 	font-family: "PlayfairDisplay-regular";
 	margin: auto;
@@ -1168,6 +1168,7 @@ textarea.form-control {
 
 	a {
 		color: $color-black;
+		font-size: 1.4rem;
 
 		&:hover {
 			color: $color-gold;
@@ -1421,6 +1422,8 @@ iframe {
 .back,
 .front {
 	backface-visibility: hidden;
+	transform-style: preserve-3d;
+	position: relative;
 }
 
 .back {

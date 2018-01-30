@@ -163,6 +163,9 @@
 
   .lawyer-box {
     width: 306px;
+    .caption {
+      width: 94%;
+    }
   }
 
   .dark-overlay::after {
@@ -171,8 +174,8 @@
   //Murali
   .page-sub-content {
     &::before {
-      left: 13%;
-      width: 74%;
+      left: 14.5%;
+      width: 70%;
     }
   }
   //
@@ -200,6 +203,9 @@
   #custom-form-container {
     width: 500px;
     margin: auto;
+  }
+  .homepage__index-heading {
+    margin-bottom: 36px;
   }
 
   .text-md-left {
@@ -458,6 +464,10 @@
     width: 87%;
   }
 
+  .body-content {
+    padding: 10vh 0;
+  }
+
   .banner {
     padding: 130px 0;
   }
@@ -540,7 +550,7 @@
   }
 
   .lawyer-box .caption {
-    width: 410px;
+    width: 100%;
     top: 45%;
   }
   //murali
@@ -550,8 +560,8 @@
 
   .page-sub-content {
     &::before {
-      left: 16%;
-      width: 67%;
+      left: 17%;
+      width: 66%;
     }
   }
   //insurance
@@ -578,6 +588,25 @@
     width: 303px;
   }
 }
+@media(min-width: 1800px) {
+  .fixed-box {
+    width: 1500px;
+    margin: auto;
+  }
+  .lawyer-box {
+    width: 500px;
+    .caption {
+      top: 45%;
+    }
+  }
+  .lawyer-img {
+    width: 478px;
+  }
+  .dark-overlay::after {
+    width: 95.5%;
+  }
+}
+
 @media (min-width: 2560px) {
   body,
   html {
@@ -688,5 +717,16 @@
 
   .bg-image__newsletter h1 {
     margin-bottom: 31px;
+  }
+  //practice-Area
+  .fixed-box {
+    width: 2163px;
+    margin: auto;
+  }
+  .lawyer-box {
+    width: 721px;
+  }
+  .lawyer-img {
+    width: 692px;
   }
 }
