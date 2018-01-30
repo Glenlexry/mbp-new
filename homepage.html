@@ -536,7 +536,8 @@
     var video = document.getElementById('video');
      video.addEventListener('click',function(){ video.play(); },false);
 
-     document.getQueryselecter('#video').click();
+     setTimeout(function activate_video() {document.getQueryselecter('#video').click();
+   }, 500)
     </script>
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
