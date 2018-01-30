@@ -71,7 +71,7 @@
 
     <div class="video-banner">
       <video  id="video"  class="video" poster="img/homepage/waterdrop.jpg" preload="auto" playsinline autoplay loop>
-        
+
         <source src="video/4636532.m4v">
           <source src="video/waterdrop.mp4" type="video/mp4">
 
@@ -515,8 +515,6 @@
       var container = document.querySelector('.video-banner');
       var video = document.querySelector('.video');
 
-
-
       setTimeout(function adapt() {
         var container_width = container.offsetWidth;
         var container_height = container.offsetHeight;
@@ -536,7 +534,9 @@
     </script>
     <script>
     var video = document.getElementById('video');
- video.addEventListener('click',function(){ video.play(); },false);
+     video.addEventListener('click',function(){ video.play(); },false);
+
+     document.getQueryselecter('#video').click();
     </script>
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
