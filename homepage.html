@@ -520,12 +520,10 @@
         video.style.width = container_width + "px";
 
         if (video.offsetHeight < container_height) {
-          video.style.height = container_height + "px";
-          video.style.width = "auto";
+          video.style.height = 108 + "%";
+          video.style.width = 102 + "%";
         }
-
         video.style.left = (((video.offsetWidth - container_width) / 2) * -1) + 'px';
-
       }
       window.addEventListener('load', adapt);
       window.addEventListener('resize', adapt);
