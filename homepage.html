@@ -535,14 +535,18 @@
     <script>
     var video = document.getElementById('video');
 
-    video.play();
-
      video.addEventListener('click',function(){ video.play(); },false);
 
-     setTimeout(function activate_video(){
-       document.querySelecter('#video').click();
-     }, 500);
     </script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+    $("#video1").bind("click", function() {
+    var vid = $(this).get(0);
+    if (vid.paused) { vid.play(); }
+    else { vid.pause(); }
+    });
+});
+</script>
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/scrollreveal.min.js"></script>
