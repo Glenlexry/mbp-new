@@ -6,6 +6,7 @@
       line-height: 20px;
     }
   }
+
 }
 @media (min-width: 425px) {
   // Murali
@@ -19,6 +20,7 @@
   .lawyer-img--solo {
     width: 300px;
   }
+
 }
 @media (min-width: 480px) {
   .content-text {
@@ -628,6 +630,10 @@
   #custom-form-container {
     width: 800px;
     margin: auto;
+  }
+  #fixed-container {
+  	width: 84%;
+  	margin: auto;
   }
   //contact-us
   .form-group {

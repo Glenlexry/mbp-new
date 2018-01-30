@@ -747,7 +747,7 @@ textarea.form-control {
 }
 
 #fixed-container {
-	width: 72%;
+	width: 82%;
 	margin: auto;
 }
 
@@ -898,10 +898,6 @@ textarea.form-control {
 		margin: 0 2px;
 		border: none;
 	}
-}
-
-#myCarousel {
-	height: 200px;
 }
 //contact-us
 
@@ -1132,8 +1128,8 @@ textarea.form-control {
 
 .box {
 	background-color: $color-gold;
-	padding: 60px 0;
-	max-width: 337px;
+	padding: 40px 0;
+	max-width: 262px;
 	font-family: "PlayfairDisplay-regular";
 	margin: auto;
 
@@ -1151,7 +1147,7 @@ textarea.form-control {
 	p {
 		text-align: right;
 		position: relative;
-		bottom: -9px;
+		bottom: -3px;
 	}
 
 	&::before {
@@ -1176,6 +1172,7 @@ textarea.form-control {
 		}
 	}
 }
+
 
 .carousel-control {
 	&.right {
